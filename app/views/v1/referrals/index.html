@@ -1,0 +1,217 @@
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+  Home - Visiting Service Management System
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <h1 class="form-title heading-large m-b-xl">Referrals</h1>
+
+  <div class="container">
+
+    <div class="tabs">
+
+      <ul>
+        <li class="tab-link current font-xsmall" data-tab="tab-1">New referrals</li>
+        <li class="tab-link font-xsmall" data-tab="tab-2">Team referrals</li>
+        <li class="tab-link font-xsmall" data-tab="tab-3">My referrals</li>
+      </ul>
+
+      <div class="clear"></div>
+
+    </div>{# /tabs #}
+
+    <div class="filters">
+
+      <h3>Filter</h3>
+      <ul>  
+        <li class="bold">All</li>
+        <li><a href="#">Received</a></li>
+        <li><a href="#">Reviewed</a></li>
+      </ul>
+
+      <select name="select">
+        <option value="" selected>Most urgent first</option> 
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+
+    </div>{# /filters #}
+
+    <div id="tab-1" class="tab-content current">
+    
+      <table class="m-b-l">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Customer</th>
+            <th>Postcode</th>
+            <th>Local authority</th>
+            <th>Referral type</th>
+            <th>Target date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="urgent">Urgent</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Peter Arnold</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td>&mdash;</td>
+            <td><span class="bold due">12 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">Urgent</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Julie Smith</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">13 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Louise Jones</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">13 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Graham Highfields</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td>&mdash;</td>
+            <td><span class="bold due">13 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Gemma Rigby</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td><abbr title ="">AA</abbr> claim</td>
+            <td><span class="">22 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Margaret Smith</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td>&mdash;</td>
+            <td><span class="">25 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Louise Jones</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td>Disability claim</td>
+            <td><span class="">12 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Margaret MacBean</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td>&mdash;</td>
+            <td><span class="">28 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="urgent">&nbsp;</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Louise Jones</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td>NG1 2BG</td>
+            <td>Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="">28 July</span></td>
+            <td>
+              <span class="col-heading">Not assigned</span>
+              <small class="small-grey">Transferred from Leeds</small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>{# /tab-1 #}
+
+    <div id="tab-2" class="tab-content">
+    
+      <p>tab 2</p>
+
+    </div>{# /tab-2 #}
+
+    <div id="tab-3" class="tab-content">
+    
+      <p>tab 3</p>
+
+    </div>{# /tab-2 #}
+
+  </div>{# /container #}
+
+</main>
+
+{% endblock %}

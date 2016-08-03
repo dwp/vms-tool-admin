@@ -18,8 +18,8 @@ router.get('/', function (req, res) {
 
 
 // Referrer
-router.post('/v1/log-in', function (req, res) {
-  res.redirect('/v1/home');
+router.post('/v1/account/log-in', function (req, res) {
+  res.redirect('/v1/home/');
 });
 
 
