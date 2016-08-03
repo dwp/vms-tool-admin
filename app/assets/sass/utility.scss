@@ -1,0 +1,138 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look in _govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+
+.clear {clear: both;}
+
+// Utility classes used for nudging spacing 
+
+//////////////////////////////////////
+// MARGIN BOTTOM
+//////////////////////////////////////
+
+// None
+
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+
+// Positive
+
+.m-b-xs {
+  margin-bottom: 5px !important;
+  @include media(tablet) {
+    margin-bottom: 8px !important;
+  }
+}
+
+.m-b-s {
+  margin-bottom: 12px !important;
+  @include media(tablet) {
+    margin-bottom: 15px !important;
+  }
+}
+
+.m-b-m {
+  margin-bottom: 15px;
+  @include media(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.m-b-ml {
+  margin-bottom: 20px;
+  @include media(tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.m-b-l {
+  margin-bottom: 25px;
+  @include media(tablet) {
+    margin-bottom: 35px;
+  }
+}
+
+.m-b-xl {
+  margin-bottom: 30px;
+  @include media(tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+//////////////////////////////////////
+// MARGIN TOP
+//////////////////////////////////////
+
+// Negative
+
+.m-b-ns {
+  margin-top: -12px !important;
+  @include media(tablet) {
+    margin-top: -15px !important;
+  }
+}
+
+.m-b-nm {
+  margin-top: -28px !important;
+  @include media(tablet) {
+    margin-top: -33px !important;
+  }
+}
+
+.m-t-nm {
+  margin-top: -15px;
+  @include media(tablet) {
+    margin-top: -20px;
+  }
+}
+
+.m-t-nl {
+  margin-top: -25px;
+  @include media(tablet) {
+    margin-top: -35px;
+  }
+}
+
+
+// None
+
+.m-t-0 {
+  margin-top: 0px;
+}
+
+// Positive
+
+.m-t-xs {
+  margin-top: 5px !important;
+  @include media(tablet) {
+    margin-top: 8px !important;
+  }
+}
+
+.m-t-m {
+  margin-top: 15px;
+  @include media(tablet) {
+    margin-top: 20px;
+  }
+}
+
+.m-t-l {
+  margin-top: 20px;
+  @include media(tablet) {
+    margin-top: 30px;
+  }
+}
+
+//////////////////////////////////////
+// PADDING
+//////////////////////////////////////
+
+.p-s {
+  padding-left: 20px;
+  padding-right: 20px;
+}

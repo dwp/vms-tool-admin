@@ -1,0 +1,121 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look in _govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+// Utility classes used for nudging spacing
+@import 'utility';
+
+// Font Overrides
+*:not(.token) {
+  font-family: $Helvetica-Regular !important; 
+}
+#proposition-name {
+  font-family: $Helvetica-Regular !important;
+}
+
+.example * {
+  font-family: 'nta', Helvetica, Arial, sans-serif;
+}
+@import 'prism';
+@import 'tabbing';
+@import 'example-box';
+@import 'remove-items-from-list';
+@import 'admin-menu';
+
+.dwplogo {
+  margin-top: -2px !important;
+  font-size: 30px !important;
+  background: none !important;
+}
+
+.built-by-dwp {
+    font-size: 16px;
+}
+
+.example-caption {
+  margin-bottom: 35px;
+}
+
+.alpha-tag{
+  @include phase-tag(alpha);
+}
+
+.phase-banner  {
+  @include phase-banner(alpha);
+  @include phase-banner(beta);
+}
+
+// form styles
+legend {
+	font-weight: 700;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 350px;
+}
+
+.form-control-1-4, 
+.postcode {
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+// input[type="file"] {
+//   text-align: baseline;
+// }
+
+.file-upload {
+  background-color: $panel-colour;
+  padding: 20px 16px 20px 21px;
+  line-height: 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid $panel-colour;
+  text-indent: -5px;
+  // font-size: 12px;
+  &:hover, &:focus {
+    border-color: $black;
+  }
+}
+
+.left-col {
+  width: 25%;
+}
+
+.sec-link a, sec-link a:visited {
+  color: #666;
+}
+
+.button.text {
+  background: none;
+  border-color: #FFFFFF;
+  color: $link-colour;
+  text-decoration: underline;
+  box-shadow: none;
+  &:hover, &:focus {
+    color: $link-hover-colour;
+  }
+  &:active {
+    top: 0;
+  }
+}
+
+// declaration
+.legal_message {
+	margin: 30px 0 30px;
+	padding-left: 60px;
+	background-image: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-2x-c948a58b675598f444f7f8fffd9ebf3d740905da332308c65b0dcb4af880d7ba.png);
+	background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-aab708504574eda2dc4a4de0802be03dbbd70d57b422de93e55e265c9ae2fc43.png) no-repeat scroll 0 0.5em;
+	background-size: 34px 34px
+}
+
+/* Helvetica baseline nudges */
+.button {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+/* End of Helvetica baseline nudges */

@@ -1,0 +1,10 @@
+{% macro label(text) %}
+
+<div class="form-group m-b-m">
+  <label class="form-label m-b-xs" for="postcode">{{ text }}</label>
+  <input type="text" class="form-control postcode m-b-s" id="postcode">
+  <button id="add-button" class="button button-add-another">Find address</button>
+  <p class="m-b-0 font-xsmall"><a href="#">Enter address manually</a></p>
+</div>
+
+{% endmacro %}
