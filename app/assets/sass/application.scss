@@ -32,7 +32,7 @@
 }
 
 .built-by-dwp {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .example-caption {
@@ -121,6 +121,15 @@ legend {
 // End of Helvetica baseline nudges
 
 
+a:visited {
+  color: $link-colour;
+  &:hover {
+    color: $link-hover-colour;
+  }
+}
+
+
+
 .clear {
   clear: both;
 }
@@ -173,57 +182,55 @@ legend {
   margin: 0;
 }
 
-
 // Tabs
 
 
-.tabs {
+.nav-tabbed {
   // background-color: red;
   border-bottom: 1px solid $border-colour;
   margin-bottom: 20px;
   // padding-bottom: 5px;
-}
-
-
-.tabs ul {
-  margin-bottom: 40px;
-  padding-bottom: 5px;
-  display: block;
-}
-
-.tabs ul li {
-  background: $page-colour;
-  display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer;
-  border: 1px solid $panel-colour;
-  background-color: $panel-colour;
-  color: $govuk-blue;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-  &:hover {
-    color: $link-hover-colour;
+  a {
+    text-decoration: none;
   }
 }
 
-.tabs ul li.current {
+.nav-tabbed ul {
+  display: block;
+  li {
+    background: $page-colour;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid $panel-colour;
+    background-color: $panel-colour;
+    color: $govuk-blue;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+    &:hover {
+      color: $link-hover-colour;
+    }
+  }
+}
+
+.nav-tabbed ul li.current {
   color: $text-colour;
   text-decoration: none;
   border: 1px solid $border-colour;
   background-color: $page-colour;
-  // position: relative;
-  // top: 20px;
-  border-bottom: 6px solid #fff;
+  border-bottom: none;
+  position: relative;
+  bottom: -1px;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  span {
+    position: relative;
+    top: -1px;
+  }
 }
 
-.tab-content {
-  display: none;
-}
 
-.tab-content.current {
-  display: inherit;
-}
 
 // Table styles 
 
@@ -256,6 +263,9 @@ legend {
 
 table a {
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 tr {

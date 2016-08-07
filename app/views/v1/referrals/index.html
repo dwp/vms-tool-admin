@@ -17,15 +17,19 @@
 
   <div class="container">
 
-    <div class="tabs">
+    <div class="nav0">
 
-      <ul>
-        <li class="tab-link current font-xsmall" data-tab="tab-1">New referrals</li>
-        <li class="tab-link font-xsmall" data-tab="tab-2">Team referrals</li>
-        <li class="tab-link font-xsmall" data-tab="tab-3">My referrals</li>
-      </ul>
+      <div class="nav-tabbed">
 
-      <div class="clear"></div>
+        <ul>
+          <li class="current"><span>New referrals</span></li>
+          <li><a href="#"><span>Team referrals</span></a></li>
+          <li><a href="#"><span>My referrals</span></a></li>
+        </ul>
+
+        <div class="clear"></div>
+
+      </div>{# /nav-tabbed #}
 
     </div>{# /tabs #}
 
@@ -46,172 +50,156 @@
 
     </div>{# /filters #}
 
-    <div id="tab-1" class="tab-content current">
-    
-      <table class="m-b-l">
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Customer</th>
-            <th>Postcode</th>
-            <th>Local authority</th>
-            <th>Referral type</th>
-            <th>Target date</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="urgent">Urgent</span></td>
-            <td>
-              <span class="col-heading"><a href="referrals/referral-details">Peter Arnold</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td>&mdash;</td>
-            <td><span class="bold due">12 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">Urgent</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Julie Smith</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td><span class="bold due">13 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Louise Jones</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td><span class="bold due">13 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Graham Highfields</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td>&mdash;</td>
-            <td><span class="bold due">13 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Gemma Rigby</a></span>
-              <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td><abbr title ="">AA</abbr> claim</td>
-            <td><span class="">22 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Margaret Smith</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td>&mdash;</td>
-            <td><span class="">25 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Louise Jones</a></span>
-              <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td>Disability claim</td>
-            <td><span class="">12 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Margaret MacBean</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td>&mdash;</td>
-            <td><span class="">28 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-          <tr>
-            <td><span class="urgent">&nbsp;</span></td>
-            <td>
-              <span class="col-heading"><a href="#">Louise Jones</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
-            </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td><span class="">28 July</span></td>
-            <td>
-              <span class="col-heading">Not assigned</span>
-              <small class="small-grey">Transferred from Leeds</small>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>{# /tab-1 #}
-
-    <div id="tab-2" class="tab-content">
-    
-      <p>tab 2</p>
-
-    </div>{# /tab-2 #}
-
-    <div id="tab-3" class="tab-content">
-    
-      <p>tab 3</p>
-
-    </div>{# /tab-2 #}
+    <table class="m-b-l truncate">
+      <thead>
+        <tr>
+          <th style="width: 5%">&nbsp;</th>
+          <th style="width: 18%">Customer</th>
+          <th style="width: 12%">Postcode</th>
+          <th style="width: 20%">Local authority</th>
+          <th style="width: 13%">Referral type</th>
+          <th style="width: 12%">Target date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="urgent">Urgent</span></td>
+          <td>
+            <span class="col-heading"><a href="referrals/referral-details">Peter Arnold</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 2BG</td>
+          <td>Nottingham City</td>
+          <td>&mdash;</td>
+          <td><span class="bold due">12 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Transferred from Leeds</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">Urgent</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Julie Smith</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 1BB</td>
+          <td class="truncate">Nottingham City</td>
+          <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+          <td><span class="bold due">13 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Rejected by Paul Jones</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Louise Jones</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 0BB</td>
+          <td>Nottingham County</td>
+          <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+          <td><span class="bold due">13 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Reviewed by Sandra Swaddle</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Graham Highfields</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 8BB</td>
+          <td>Nottingham County</td>
+          <td>&mdash;</td>
+          <td><span class="bold due">13 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Reviewed by Sandra Swaddle</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Gemma Rigby</a></span>
+            <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
+          </td>
+          <td>NG10 3BB</td>
+          <td>Nottingham City</td>
+          <td><abbr title ="">AA</abbr> claim</td>
+          <td><span class="">22 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Rejected by Paul Jones</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Margaret Smith</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 2BG</td>
+          <td>Nottingham City</td>
+          <td>&mdash;</td>
+          <td><span class="">25 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Transferred from Lincoln</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Louise Jones</a></span>
+            <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
+          </td>
+          <td>NG1 2BB</td>
+          <td>Nottingham City</td>
+          <td>Disability claim</td>
+          <td><span class="">12 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Transferred from Rotheram</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Margaret MacBean</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 4BB</td>
+          <td>Nottingham City</td>
+          <td>&mdash;</td>
+          <td><span class="">28 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Rejected by Patrick Ross</small>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="urgent">&nbsp;</span></td>
+          <td>
+            <span class="col-heading"><a href="#">Louise Jones</a></span>
+            <small class="small-grey">AA 12 34 56 D</small>
+          </td>
+          <td>NG1 2BG</td>
+          <td>Nottingham County</td>
+          <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+          <td><span class="">28 July</span></td>
+          <td>
+            <span class="col-heading">Not assigned</span>
+            <small class="small-grey">Transferred from Leeds</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>{# /container #}
 
