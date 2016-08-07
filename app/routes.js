@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
 /////////////////////////
 
 
-// Referrer
+// Log in
 router.post('/v1/account/log-in', function (req, res) {
   res.redirect('/v1/home/');
 });
