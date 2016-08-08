@@ -1,0 +1,100 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals/team-referrals" class="link-back">Back to referrals</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <div style="float:left; width:80%;">
+      <h1 class="form-title heading-large m-b-l">Graham Highfields</h1>
+    </div>
+
+    <div style="float:right; width:15%;">
+      <a href="" class="print font-xsmall">Print</a>
+    </div>
+
+    <div class="nav-tabbed">
+
+      <ul>
+        <li><a href="referral-details-graham-highfields"><span>Referral details</span></a></li>
+        <li class="current"><span>Comments (3)</span></li>
+      </ul>
+
+      <div class="clear"></div>
+
+    </div>{# /nav-tabbed #}
+
+    <form class="m-t-xl">
+
+      <div class="form-group">
+        <label class="form-label m-b-xs" for="add-comment">Your comment</label>
+        <textarea class="form-control span-width" id="add-comment"></textarea>
+      </div>
+
+      <p><a href="#" class="button">Post comment</a></p>
+
+    </form>
+
+    <hr>
+
+    <h3 class="heading-small">Karen Bradley &ndash; 16 May 2016</h3>
+    <p>Had a conversation with Laura (Graham&rsquo;s daughter) on Friday. She mentioned that Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+    <hr>
+
+    <h3 class="heading-small">Sandra Smith &ndash; 12 May 2016</h3>
+    <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+    <hr>
+
+    <h3 class="heading-small">Sandra Smith &ndash; 9 April 2016</h3>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+    <hr>
+
+  </div>{# /column-two-thirds #}
+
+  <div class="column-one-third">
+
+    <div class="sidebar primary pending">
+      <h4 class="heading-medium m-b-xs m-t-0 status-heading pending">Pending</h4>
+      <p class="font-xsmall">Assigned to John Wilcox</p>
+      <p><a href="book-visit" class="button">Book visit</a></p>
+      <ul class="action-list font-xsmall bold">
+        <li><a href="#">Assign to me</a></li>
+        <li><a href="#">Return to team</a></li>
+        <li><a href="#">Assign to another visiting officer</a></li>
+        <li><a href="#">Transfer to another team</a></li>
+        <li><a href="#">Mark as urgent</a></li>
+      </ul>
+    </div>
+    {# /sidebar #}
+
+    {% include "v1/referrals/includes/cleared-sidebar.html" %}
+
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

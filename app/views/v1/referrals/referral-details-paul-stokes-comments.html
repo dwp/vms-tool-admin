@@ -1,0 +1,93 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Paul Stokes - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals/my-referrals" class="link-back">Back to referrals</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <div style="float:left; width:80%;">
+      <h1 class="form-title heading-large m-b-l">Paul Stokes</h1>
+    </div>
+
+    <div style="float:right; width:15%;">
+      <a href="" class="print font-xsmall">Print</a>
+    </div>
+
+    <div class="nav-tabbed">
+
+      <ul>
+        <li><a href="referral-details-paul-stokes"><span>Referral details</span></a></li>
+        <li class="current"><span>Comments (2)</span></li>
+      </ul>
+
+      <div class="clear"></div>
+
+    </div>{# /nav-tabbed #}
+
+     <form class="m-t-xl">
+
+      <div class="form-group">
+        <label class="form-label m-b-xs" for="add-comment">Your comment</label>
+        <textarea class="form-control span-width" id="add-comment"></textarea>
+      </div>
+
+      <p><a href="#" class="button">Post comment</a></p>
+
+    </form>
+
+    <hr>
+
+    <h3 class="heading-small">Julian Brockenhurst &ndash; 12 February 2016</h3>
+    <p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+    <hr>
+
+    <h3 class="heading-small">Gary Stephenson &ndash; 9 January 2016</h3>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+    <hr>
+
+  </div>{# /column-two-thirds #}
+
+  <div class="column-one-third">
+
+    <div class="sidebar primary booked">
+      <h4 class="heading-medium m-t-0 m-b-xs status-heading booked">Booked</h4>
+      <h5 class="heading-small m-t-0 m-b-xs">25 July 11:00am &ndash; 11:30am</h5>
+      <p class="font-xsmall">Assigned to Julie Smith</p>
+      <ul class="action-list font-xsmall bold">
+        <li><a href="#">Edit visit details</a></li>
+        <li><a href="#">Cancel visit</a></li>
+        <li><a href="#">Transfer to another visiting officer</a></li>
+      </ul>
+    </div>
+    {# /sidebar #}
+
+    {% include "v1/referrals/includes/cleared-sidebar.html" %}
+
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

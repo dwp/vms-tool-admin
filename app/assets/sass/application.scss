@@ -130,6 +130,10 @@ a:visited {
   clear: both;
 }
 
+body .span-width {
+  max-width: 90% !important;
+  min-height: 100px;
+}
 
 
 // Navigation pri
@@ -239,17 +243,17 @@ a:visited {
   font-weight: bold;
 }
 
-.pending {
-  color: $orange;
-}
+// .pending {
+//   color: $orange;
+// }
 
-.booked {
-  color: $button-colour;
-}
+// .booked {
+//   color: $button-colour;
+// }
 
-.not-assigned {
-  color: $grey-1;
-}
+// .not-assigned {
+//   color: $grey-1;
+// }
 
 .sticker {
   border: 1px solid $text-colour;
@@ -303,7 +307,15 @@ a:visited {
 }
 
 .green {
-  color: $button-colour;
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 
@@ -379,11 +391,30 @@ tbody td {
   // padding: 15px;
   margin-bottom: 20px;
   margin-left: 15px;
-  border-top: 8px solid #28a197;
+  border-top: 8px solid $turquoise;
   padding-top: 10px;
   margin-top: 30px;
   &.booked {
-    border-color: $live-colour;
+    border-color: $green;
+  }
+  &.pending {
+    border-color: $orange;
+  }
+  &.not-assigned {
+    border-color: $grey-1;
+  }
+}
+
+.status-heading {
+  text-transform: uppercase;
+  &.booked {
+    color: $green;
+  }
+  &.pending {
+    color: $orange;
+  }
+  &.not-assigned {
+    color: $grey-1;
   }
 }
 

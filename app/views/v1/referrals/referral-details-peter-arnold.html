@@ -4,7 +4,7 @@
 {% extends "layout_dwp.html" %}
 
 {% block page_title %}
- Referral details - Visiting Service Management System 
+ Peter Arnold - Visiting Service Management System 
 {% endblock %}
 
 {% block content %}
@@ -15,9 +15,7 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-
       <a href="../referrals" class="link-back">Back to referrals</a>
-
     </div>
 
   </div>{# /grid-row #}
@@ -27,12 +25,23 @@
   <div class="column-two-thirds position-relative">
 
     <div style="float:left; width:80%;">
-      <h1 class="form-title heading-large">Margaret Macbean</h1>
+      <h1 class="form-title heading-large m-b-l">Peter Arnold</h1>
     </div>
 
     <div style="float:right; width:15%;">
       <a href="" class="print font-xsmall">Print</a>
     </div>
+
+    <div class="nav-tabbed">
+
+      <ul>
+        <li class="current"><span>Referral details</span></li>
+        <li><a href="referral-details-peter-arnold-comments"><span>Comments (0)</span></a></li>
+      </ul>
+
+      <div class="clear"></div>
+
+    </div>{# /nav-tabbed #}
 
     <table class="check-your-answers">
 
@@ -52,10 +61,10 @@
             Customer details
           </td>
           <td>
-            Mrs<br>
-            Margaret MacBean<br>
+            Mr<br>
+            Peter Arnold<br>
             12/08/1984<br>
-            QQ 12 35 56
+            AA 12 34 56 D
           </td>
           <td class="change-answer">
             <a href="/v2/customer-details/edit">
@@ -68,8 +77,8 @@
             Customer contact
           </td>
           <td>
-            6 Camdale Road, Meanwood, Leeds<br>
-            LS6 4BB<br>
+            6 Camdale Road, Beeston, Nottingham<br>
+            NG1 2BG<br>
             0115 9179 577<br>
             Large print<br>
             Welsh language
@@ -206,36 +215,9 @@
 
     </table>
 
-
   </div>{# /column-two-thirds #}
 
   <div class="column-one-third">
-
-    <div class="sidebar primary pending">
-      <h4 class="heading-medium m-b-xs m-t-0 status-heading pending">Pending</h4>
-      <p class="font-xsmall">Assigned to Julie Smith</p>
-      <p><a href="book-visit" class="button">Book visit</a></p>
-      <ul class="action-list font-xsmall bold">
-        <li><a href="#">Reject</a></li>
-        <li><a href="#">Return to team</a></li>
-        <li><a href="#">Assign to another visiting officer</a></li>
-        <li><a href="#">Transfer to another team</a></li>
-        <li><a href="#">Mark as urgent</a></li>
-      </ul>
-    </div>
-    {# /sidebar #}
-
-    <div class="sidebar primary booked">
-      <h4 class="heading-medium m-t-0 m-b-xs status-heading booked">Booked</h4>
-      <h5 class="heading-small m-t-0 m-b-xs">18 July 11:00am &ndash; 11:30am</h5>
-      <p class="font-xsmall">Assigned to Julie Smith</p>
-      <ul class="action-list font-xsmall bold">
-        <li><a href="#">Edit visit details</a></li>
-        <li><a href="#">Cancel visit</a></li>
-        <li><a href="#">Transfer to another visiting officer</a></li>
-      </ul>
-    </div>
-    {# /sidebar #}
 
     <div class="sidebar primary not-assigned">
       <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned</h4>

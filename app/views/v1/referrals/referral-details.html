@@ -211,21 +211,22 @@
 
   <div class="column-one-third">
 
-    {# <div class="sidebar primary">
-      <h4 class="heading-medium  m-b-xs m-t-0">Pending</h4>
+    <div class="sidebar primary pending">
+      <h4 class="heading-medium m-b-xs m-t-0 status-heading pending">Pending</h4>
       <p class="font-xsmall">Assigned to Julie Smith</p>
       <p><a href="book-visit" class="button">Book visit</a></p>
       <ul class="action-list font-xsmall bold">
         <li><a href="#">Reject</a></li>
         <li><a href="#">Return to team</a></li>
-        <li><a href="#">Mark as urgent</a></li>
-        <li><a href="#">Transfer to another visiting officer</a></li>
+        <li><a href="#">Assign to another visiting officer</a></li>
         <li><a href="#">Transfer to another team</a></li>
+        <li><a href="#">Mark as urgent</a></li>
       </ul>
-    </div> #}{# /sidebar #}
+    </div>
+    {# /sidebar #}
 
     <div class="sidebar primary booked">
-      <h4 class="heading-medium m-t-0 m-b-0 m-b-xs green">Booked</h4>
+      <h4 class="heading-medium m-t-0 m-b-xs status-heading booked">Booked</h4>
       <h5 class="heading-small m-t-0 m-b-xs">18 July 11:00am &ndash; 11:30am</h5>
       <p class="font-xsmall">Assigned to Julie Smith</p>
       <ul class="action-list font-xsmall bold">
@@ -233,53 +234,21 @@
         <li><a href="#">Cancel visit</a></li>
         <li><a href="#">Transfer to another visiting officer</a></li>
       </ul>
-    </div>{# /sidebar #}
+    </div>
+    {# /sidebar #}
 
-    <div class="sidebar secondary">
+    <div class="sidebar primary not-assigned">
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned</h4>
+      <ul class="action-list font-xsmall bold">
+        <li><a href="#">Assign this to me</a></li>
+        <li><a href="#">Assign to another visiting officer</a></li>
+        <li><a href="#">Transfer to another team</a></li>
+        <li><a href="#">Mark as urgent</a></li>
+      </ul>
+    </div>
+    {# /sidebar #}
 
-      <details>
-
-      <summary class="m-t-m font-xsmall"><span class="summary">Previously cleared referrals</span></summary>
-
-      <div class="m-t-m">
-        <ol class="font-xsmall">
-          <li>
-            <ul class="list">
-              <li class="bold"><a href="#">22 July 2016</a></li>
-              <li class="small-grey">Cleared by telephone by Mike Andrew</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list">
-              <li class="bold"><a href="#">16 July 2016</a></li>
-              <li class="small-grey">Effective, cleared by Mike Andrew</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list">
-              <li class="bold"><a href="#">14 July 2016</a></li>
-              <li class="small-grey">Ineffective, cleared by Sam McBrien</li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list">
-              <li class="bold"><a href="#">10 September 2016</a></li>
-              <li class="small-grey">Withdrawn, cleared by Paul Tully</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-
-    </details>
-
-      
-    </div>{# /sidebar #}
-
-    <aside class="govuk-related-items aside" role="complementary">
-
-    
-
-  </aside>
+    {% include "v1/referrals/includes/cleared-sidebar.html" %}
 
   </div>{# /column-two-thirds #}
 
