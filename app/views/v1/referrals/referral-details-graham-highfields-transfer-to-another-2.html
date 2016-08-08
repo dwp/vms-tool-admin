@@ -1,0 +1,58 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals/referral-details-graham-highfields-transfer-to-another-1" class="link-back">Back to search</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <h1 class="form-title heading-large m-b-l">Select a team</h1>
+
+    <fieldset class="form-group js-error-container">
+
+      <legend class="c-legend c-legend--medium visuallyhidden"></legend>
+
+      <label class="block-label" for="option1">
+        <input id="option1" type="radio" name="options" value="1">
+        Nottingham City Head Office visiting team
+      </label>
+
+      <label class="block-label" for="option2">
+        <input id="option2" type="radio" name="options" value="2">
+        Nottinghamshire County Council visiting team
+      </label>
+     
+
+    </fieldset>
+
+    <p><a href="referral-details-graham-highfields-transferred-to-another" class="button">Transfer this referral</a></p>
+
+    </form>
+
+
+   
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

@@ -235,6 +235,12 @@ body .span-width {
   }
 }
 
+.heading-medium .heading-secondary {
+  color: $grey-1 !important;
+  font-weight: normal;
+  display: block;
+  font-size: 19px;
+}
 
 
 // Table styles 
@@ -345,10 +351,6 @@ tbody td {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.urgent {
-  color: #d44300;
 }
 
 .ucb {
@@ -525,5 +527,98 @@ ul.action-list {
     text-decoration: underline;
   }
 }
+
+// Calendar table
+
+.calendar {
+  position: relative;
+}
+
+.calendar table {
+  text-align: center;
+  .day-col {
+    width: 15%;
+    
+  }
+  span {
+    display: block;
+    width: 125%;
+    text-align: center;
+  }
+  td {
+    border: 1px solid $grey-2;
+    text-align: center;
+  }
+  th {
+    font-weight: normal;
+    font-size: 14px !important;
+  }
+  tbody th {
+    border-left: 1px solid $grey-2;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+.column-thin {
+  width: 25%;
+  float: left;
+}
+
+.column-wide {
+  width: 72%;
+  float: right;
+}
+
+.calendar .event {
+  display: block;
+  position: absolute;
+  border-radius: 2px;
+  width: 13.6%;
+  font-size: 13px;
+  a {
+    display: block;
+    padding: 10px 5px 5px 5px;
+    text-decoration: none;
+    color: $text-colour;
+  }
+}
+
+.calendar .visit {
+  background-color: rgba(255,210,138,0.6);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.calendar .leave {
+  background-color: rgba(46,53,139,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.event-1 {
+  top: 78px;
+  left: 26.2%;
+  a {
+    height: 217px;
+  }
+}
+
+.event-2 {
+  top: 398px;
+  left: 85.6%;
+  a {
+    height: 96px;
+  }
+}
+
+.event-3 {
+  top: 38px;
+  left: 55.8%;
+  a {
+    height: 696px;
+  }
+}
+
+
+
 
 

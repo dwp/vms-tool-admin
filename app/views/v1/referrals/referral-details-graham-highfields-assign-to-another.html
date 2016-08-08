@@ -1,0 +1,84 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals/team-referrals" class="link-back">Back to referrals</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <h1 class="form-title heading-large m-b-l">Choose another visiting officer to assign this referral to</h1>
+
+    <form>
+
+    <fieldset class="form-group js-error-container">
+
+      <legend class="c-legend c-legend--medium visuallyhidden"></legend>
+
+      <label class="block-label" for="option1">
+        <input id="option1" type="radio" name="options" value="1">
+        Aaron Kirk
+      </label>
+
+      <label class="block-label" for="option2">
+        <input id="option2" type="radio" name="options" value="2">
+        Grant Philipps
+      </label>
+
+      <label class="block-label" for="option3">
+        <input id="option3" type="radio" name="options" value="3">
+        Holly McBrien
+      </label>
+
+      <label class="block-label" for="option4">
+        <input id="option4" type="radio" name="options" value="4">
+        John Wilcock
+      </label>
+
+      <label class="block-label" for="option5">
+        <input id="option5" type="radio" name="options" value="5">
+        Peter Smith
+      </label>
+
+      <label class="block-label" for="option6">
+        <input id="option6" type="radio" name="options" value="6">
+        Quentin Hornil
+      </label>
+
+      <label class="block-label" for="option7">
+        <input id="option7" type="radio" name="options" value="7">
+        Peter Smith
+      </label>
+
+    </fieldset>
+
+    <p><a href="referral-details-graham-highfields-assigned-to-another" class="button">Assign this referral</a></p>
+
+    </form>
+
+
+   
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

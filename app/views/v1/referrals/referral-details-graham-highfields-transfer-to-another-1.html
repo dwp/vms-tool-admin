@@ -1,0 +1,53 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals/referral-details-graham-highfields" class="link-back">Back to Graham Highfields</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <h1 class="form-title heading-large m-b-l">Transfer referral to another team</h1>
+
+    <form>
+
+    <fieldset class="form-group js-error-container">
+
+      <legend class="c-legend c-legend--medium visuallyhidden"></legend>
+
+      <label class="form-label m-b-xs" for="team-search">Team name</label>
+
+      <input type="text" class="form-control" id="team-search" />
+
+    </fieldset>
+
+    <p><a href="referral-details-graham-highfields-transfer-to-another-2" class="button">Look up</a></p>
+
+    </form>
+
+
+   
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

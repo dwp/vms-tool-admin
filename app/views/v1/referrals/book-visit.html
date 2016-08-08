@@ -13,89 +13,87 @@
 
 <main id="content" role="main">
 
-  <div class="sidebar m-t-l">
+  <div class="grid-row">
 
-    <form>
+    <div class="column-thin">
 
-      <div class="form-group">
+      <form>
 
-        <fieldset>
-          <legend>
-            <span class="form-label-bold">
-              Visiting Margaret MacBean
+        <div class="form-group">
+
+          <h1 class="form-title heading-medium m-b-l">
+            <span class="heading-secondary">
+              Book a visit
             </span>
-          </legend>
-          <div class="form-date">
-            <div class="form-group form-group-day">
-              <label class="form-label" for="dob-day">Day</label>
-              <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+            Graham Highfields
+          </h1>
+
+          <fieldset>
+            
+            <div class="form-date">
+              <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+              </div>
+              <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+              <div class="form-group">
+                <label for="year" class="form-label">Year</label>
+                <select id="year" class="form-control" style="min-width: 80px; position-relative; height: 37px;">
+                  <option>2016</option>
+                  <option>2017</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group form-group-month">
-              <label class="form-label" for="dob-month">Month</label>
-              <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-            </div>
-            <div class="form-group form-group-year">
-              <label class="form-label" for="dob-year">Year</label>
-              <select>
-                <option>2016</option>
-                <option>2017</option>
-              </select>
-            </div>
+          </fieldset>
+
+        </div>{# /form-group #}
+
+        <div class="form-group">
+
+          <div class="form-group">
+            <label for="start-time" class="form-label">Start time</label>
+            <span class="form-hint m-b-xs">For example, 10:00am</span>
+            <input id="start-time" type="text" class="form-control form-control-1-4">
           </div>
-        </fieldset>
 
-      </div>{# /form-group #}
-
-      <div class="form-group">
-
-        <fieldset>
-          <div class="form-date">
-            <div class="form-group form-group-day">
-              <label class="form-label" for="">Start time</label>
-              <input class="form-control" type="text">
-            </div>
-
-            <div class="form-group form-group-month">
-              <label class="form-label" for="">End time</label>
-              <input class="form-control" type="text">
-            </div>
+          <div class="form-group">
+            <label for="end-time" class="form-label">End time</label>
+            <span class="form-hint m-b-xs">For example, 12:00pm</span>
+            <input id="end-time" type="text" class="form-control form-control-1-4">
           </div>
-        </fieldset>
 
-      </div>{# /form-group #}
+          <p>6 Camdale Road,<br />
+            Meanwood,<br />
+            Leeds,<br />
+            LS6 4BB
+          </p>
 
-      <div class="form-group">
+          <label><input type="checkbox"> Send an email prompt</label>
 
-        <p>6 Camdale Road,<br />
-          Meanwood,<br />
-          Leeds,<br />
-          LS6 4BB<br />
-          0115 9179 577
-        </p>
+          <div class="clear"></div>
 
-      </div>{# /form-group #}
+        </div>{# /form-group #}
 
-{#       <div class="form-group form-group-year">
-        <label class="form-label" for="dob-year">Visiting officer</label>
-        <select>
-          <option>Julie Smith</option>
-          <option>Patrick Jones</option>
-          <option>Fred Hancock</option>
-          <option>Melanie Williams</option>
-          <option>Sandra Smith</option>
-          <option>Jimmy Nail</option>
-        </select>
-      </div> #}
+        <div class="form-group">
+          <a href="referral-details-graham-highfields-booked"class="button">Book visit</a>
+          <a href="referral-details-graham-highfields" class="button text">Cancel</a>
+        </div>
 
-      <label><input type="checkbox"> Send an email prompt</label>
-
-      <div class="clear"></div>
+      </form>
 
 
+    </div>{# /column-thin #}
 
-    </form>
+    <div class="column-wide">
 
-  </div>{# /sidebar #}
+      {% include "includes/calendar.html" %}
+
+    </div>{# /column-wide #}
+
+  </div>{# /grid-row #}
 
 </main>
 
