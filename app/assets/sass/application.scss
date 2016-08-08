@@ -239,22 +239,59 @@ a:visited {
   font-weight: bold;
 }
 
+.pending {
+  color: $orange;
+}
+
+.booked {
+  color: $button-colour;
+}
+
+.not-assigned {
+  color: $grey-1;
+}
+
+.sticker {
+  border: 1px solid $text-colour;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 2px 5px;
+  display: inline-block;
+  margin-bottom: -1px;
+  border-radius: 2px;
+}
+
+// .col-heading {
+//   color: red !important;
+// }
+
 .col-heading {
   font-weight: bold;
   display: block;
+  &.grey {
+    color: $grey-1;
+    .sticker {
+      border-color: $grey-2;
+    }
+  }
+  &.pending {
+    color: $orange;
+    .sticker {
+      border-color: $orange;
+    }
+  }
+  &.booked {
+    color: $green;
+    .sticker {
+      border-color: $green;
+    }
+  }
   a {
     display: block;
     padding-bottom: 1px;
+
   }
 }
-
-// .truncate td {
-//   max-width: 0;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap
-// }
-
 
 .small-grey {
   color: #4a4f51;
@@ -266,7 +303,7 @@ a:visited {
 }
 
 .green {
-  color: $green;
+  color: $button-colour;
 }
 
 
@@ -345,6 +382,9 @@ tbody td {
   border-top: 8px solid #28a197;
   padding-top: 10px;
   margin-top: 30px;
+  &.booked {
+    border-color: $live-colour;
+  }
 }
 
 .sidebar.secondary {

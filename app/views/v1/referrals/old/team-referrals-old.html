@@ -34,155 +34,164 @@
         <h3>Filter</h3>
         <ul>  
           <li class="bold">All</li>
-          <li><a href="team-referrals-pending">Pending</a></li>
-          <li><a href="team-referrals-booked">Booked</a></li>
+          <li><a href="#">Booked</a></li>
+          <li><a href="#">Pending</a></li>
         </ul>
-{#         &nbsp;&nbsp;
-        <h3>Sort by</h3>
+
         <select name="select">
           <option value="" selected>Most urgent first</option> 
-          <option value="">Recently added first</option>
-        </select> #}
+          <option value="">Latest first</option>
+        </select>
 
       </div>{# /filters #}
 
       <table class="m-b-l truncate">
         <thead>
           <tr>
-            <th style="width: 12%">Target date</th>
+            <th style="width: 5%">&nbsp;</th>
             <th style="width: 18%">Customer</th>
-            <th style="width: 17%">Referral type</th>
-            <th>Status</th>
             <th style="width: 12%">Postcode</th>
             <th style="width: 19%">Local authority</th>
+            <th style="width: 14%">Referral type</th>
+            <th style="width: 12%">Target date</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="bold due">10 July</span></td>
+            <td><span class="urgent">Urgent</span></td>
             <td>
               <span class="col-heading"><a href="referrals/referral-details">Graham Highfields</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td>Disability claim</td>
-            <td>
-              <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to John Wilcox</small>
-            </td>
             <td>NG2 11G</td>
             <td>Nottingham County</td>
+            <td>Disability claim</td>
+            <td><span class="bold due">10 July</span></td>
+            <td>
+              <span class="col-heading green"><span class="sticker">Booked: 25 July</span></span>
+              <small class="small-grey">Assigned to John Wilcox</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">11 July</span></td>
+            <td><span class="urgent">Urgent</span></td>
             <td>
               <span class="col-heading"><a href="#">Paul Stokes</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td>
-              <span class="col-heading booked"><span class="sticker">Booked: 25 July</span></span>
-              <small class="small-grey">Assigned to Julie Smith</small>
-            </td>
             <td>NG4 1AA</td>
             <td class="truncate">Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">11 July</span></td>
+            <td>
+              <span class="col-heading green"><span class="sticker">Booked: 25 July</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">12 July</span></td>
+            <td><span class="urgent">Urgent</span></td>
             <td>
               <span class="col-heading"><a href="#">Holly Peterson</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
+            <td>NG3 0BG</td>
+            <td>Nottingham County</td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">12 July</span></td>
             <td>
-              <span class="col-heading booked"><span class="sticker">Booked: 25 July</span></span>
+              <span class="col-heading green"><span class="sticker">Booked: 25 July</span></span>
               <small class="small-grey">Assigned to Julie Smith</small>
             </td>
-            <td>NG3 0BG</td>  
-            <td>Nottingham County</td>
           </tr>
           <tr>
-            <td><span class="bold due">12 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Jill Perkins</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td>
-              <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to Julie Smith</small>
-            </td>
             <td>NG12 9TY</td>
             <td>Nottingham County</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">12 July</span></td>
+            <td>
+              <span class="col-heading grey"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="bold due">13 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Steven Callum</a></span>
               <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
             </td>
-            <td><abbr title ="">AA</abbr> claim</td>
-            <td>
-              <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to Tim Jones</small>
-            </td>
             <td>NG1 3BB</td>
             <td>Nottingham City</td>
+            <td><abbr title ="">AA</abbr> claim</td>
+            <td><span class="bold due">13 July</span></td>
+            <td>
+              <span class="col-heading grey"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Tim Jones</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">13 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Margaret Smith</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td>
-              <span class="col-heading booked"><span class="sticker">Booked: 30 July</span></span>
-              <small class="small-grey">Assigned to Tim Jones</small>
-            </td>
             <td>NG1 1AA</td>
             <td>Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="bold due">13 July</span></td>
+            <td>
+              <span class="col-heading green"><span class="sticker">Booked: 30 July</span></span>
+              <small class="small-grey">Assigned to Tim Jones</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">14 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Noel Jenkins</a></span>
               <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
             </td>
-            <td>Disability claim</td>
-            <td>
-              <span class="col-heading booked"><span class="sticker">Booked: 1 August</span></span>
-              <small class="small-grey">Assigned to Grant Phi&hellip;</small>
-            </td>
             <td>NG1 6TY</td>
             <td>Nottingham City</td>
+            <td>Disability claim</td>
+            <td><span class="">14 July</span></td>
+            <td>
+              <span class="col-heading green"><span class="sticker">Booked: 1 August</span></span>
+              <small class="small-grey">Assigned to Grant Phi&hellip;</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">28 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Grant Harley</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td>
-              <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to Tim Jones</small>
-            </td>
             <td>NG1 P98</td>
             <td>Nottingham City</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="">28 July</span></td>
+            <td>
+              <span class="col-heading grey"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Tim Jones</small>
+            </td>
           </tr>
           <tr>
-            <td><span class="">28 July</span></td>
+            <td><span class="urgent">&nbsp;</span></td>
             <td>
               <span class="col-heading"><a href="#">Sam Kramer</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-            <td>
-              <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to Julie Smith</small>
-            </td>
             <td>NG1 4TR</td>
             <td>Nottingham County</td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><span class="">28 July</span></td>
+            <td>
+              <span class="col-heading grey"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
           </tr>
         </tbody>
       </table>
