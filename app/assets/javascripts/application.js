@@ -125,3 +125,18 @@ $(document).ready(function() {
   toggleContent.showHideCheckboxToggledContent();
 
 });
+
+// Searchable table
+
+$(document).ready(function() {
+  
+  // Setup - add a text input to each footer cell
+  $('#searchable-table tfoot th').each( function () {
+    var title = $(this).text();
+    $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+  } );
+
+  // DataTable
+  var table = $('#searchable-table').DataTable();
+
+});
