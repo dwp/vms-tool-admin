@@ -139,4 +139,6 @@ $(document).ready(function() {
   // DataTable
   var table = $('#searchable-table').DataTable();
 
+  $("#searchable-table_filter").find('input').attr("placeholder", "Type to filter");
+
 });

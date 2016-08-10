@@ -124,8 +124,6 @@ a:visited {
   }
 }
 
-
-
 .clear {
   clear: both;
 }
@@ -245,6 +243,29 @@ body .span-width {
 
 // Table styles 
 
+
+// Column widths
+
+table {
+  th.col-1 {
+    width: 1%;
+  }
+  .col-2 {
+    width: 12%;
+  }
+  .col-3 {
+    width: 22%;
+  }
+  .col-4 {
+    width: 17%;
+  }
+  .col-5 {
+    width: 18%;
+  }
+  .col-5 {
+  }
+}
+
 .bold {
   font-weight: bold;
 }
@@ -261,11 +282,12 @@ body .span-width {
 //   color: $grey-1;
 // }
 
-.sticker {
+.sticker,
+.urgent {
   border: 1px solid $text-colour;
   text-transform: uppercase;
   font-size: 13px;
-  padding: 2px 5px;
+  padding: 2px 4px;
   display: inline-block;
   margin-bottom: -1px;
   border-radius: 2px;
@@ -324,7 +346,6 @@ body .span-width {
   text-transform: uppercase;
 }
 
-
 table a {
   text-decoration: none;
   &:hover {
@@ -357,6 +378,21 @@ tbody td {
   color: $red;
 }
 
+.urgent {
+  font-size: 12px;
+  background-color: $red;
+  padding: 2px;
+  color: $page-colour;
+  padding: 2px 4px;
+  border: 1px solid $red;
+  border-radius: 2px;
+  font-weight: bold;
+  &.hidden {
+    background-color: $page-colour;
+    color: $page-colour;
+  }
+}
+
 .due {
   color: $red;
 }
@@ -387,6 +423,41 @@ tbody td {
   }
 
 }
+
+// Sortable table styles
+
+
+// Dynamic search styles
+
+.dataTables_filter {
+  width: 200px;
+  float: right;
+  margin-top: -47px;
+  label {
+    position: relative;
+    display: block;
+    background-color: red;
+    input {
+      position: absolute;
+      right: 0;
+      font-size: 16px;
+      padding: 5px;
+      width: 300px;
+    }
+    ::-webkit-input-placeholder {
+      color:$grey-1;
+    }
+  }
+}
+
+// Hide unnecessary things
+
+.dataTables_length,
+.dataTables_info,
+.dataTables_paginate {
+  display: none;
+}
+
 
 .sidebar.primary {
   // background-color: $highlight-colour;

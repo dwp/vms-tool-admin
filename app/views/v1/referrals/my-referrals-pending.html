@@ -31,63 +31,57 @@
 
     <div class="filters">
 
-      <h3>Filter</h3>
+      <h3>Showing</h3>
       <ul>
         <li><a href="my-referrals">All</a></li>
         <li class="bold">Pending</li>
         <li><a href="my-referrals-booked">Booked</a></li>
       </ul>
-      &nbsp;&nbsp;
-        <h3>Sort by</h3>
-        <select name="select">
-          <option value="" selected>Most urgent first</option> 
-          <option value="">Date added (latest first)</option>
-        </select>
 
     </div>{# /filters #}
 
     <table id="searchable-table" class="m-b-l truncate display">
-      <thead>
-        <tr>
-          <th style="width: 12%">Target date</th>
-          <th style="width: 18%">Customer</th>
-          <th style="width: 17%">Referral type</th>
-          <th>Status</th>
-          <th style="width: 12%">Postcode</th>
-          <th style="width: 19%">Local authority</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="bold due">12 July</span></td>
-          <td>
-            <span class="col-heading"><a href="#">Jill Perkins</a></span>
-            <small class="small-grey">AA 12 34 56 D</small>
-          </td>
-          <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-          <td>
-            <span class="col-heading pending"><span class="sticker">Pending</span></span>
-            <small class="small-grey">Assigned to Julie Smith</small>
-          </td>
-          <td>NG12 9TY</td>
-          <td>Nottingham County</td>
-        </tr>
-        <tr>
-          <td><span class="">28 July</span></td>
-          <td>
-            <span class="col-heading"><a href="#">Sam Kramer</a></span>
-            <small class="small-grey">AA 12 34 56 D</small>
-          </td>
-          <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
-          <td>
-            <span class="col-heading pending"><span class="sticker">Pending</span></span>
-            <small class="small-grey">Assigned to Julie Smith</small>
-          </td>
-          <td>NG1 4TR</td>
-          <td>Nottingham County</td>
-        </tr>
-      </tbody>
-    </table>
+        <thead>
+          <tr>
+            <th class="col-1">&nbsp;</th>
+            <th class="col-2">Target date</th>
+            <th class="col-3">Customer</th>
+            <th class="col-4">Referral type</th>
+            <th class="col-5">Status</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="urgent hidden">Urgent</span></td>
+            <td><span class="bold due">12 July</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Jill Perkins</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td>
+              <span class="col-heading pending"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
+            <td>Long Eaton, Nottingham<br />NG4 8TU</td>
+          </tr>
+          <tr>
+            <td><span class="visually-hidden">z</span></td>
+            <td><span class="">28 July</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Sam Kramer</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td>
+              <span class="col-heading pending"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
+            <td>Mansfield, Nottingham<br />NG12 7UJ</td>
+          </tr>
+        </tbody>
+      </table>
 
   </div>{# /container #}
 

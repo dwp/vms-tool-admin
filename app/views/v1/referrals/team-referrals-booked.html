@@ -31,34 +31,29 @@
 
       <div class="filters">
 
-        <h3>Filter</h3>
+        <h3>Showing</h3>
         <ul>  
           <li><a href="team-referrals">All</a></li>
           <li><a href="team-referrals-pending">Pending</a></li>
           <li class="bold">Booked</li>
         </ul>
-        &nbsp;&nbsp;
-        <h3>Sort by</h3>
-        <select name="select">
-          <option value="" selected>Most urgent first</option> 
-          <option value="">Date added (latest first)</option>
-        </select>
 
       </div>{# /filters #}
 
       <table id="searchable-table" class="m-b-l truncate display">
         <thead>
           <tr>
-            <th style="width: 12%">Target date</th>
-            <th style="width: 18%">Customer</th>
-            <th style="width: 17%">Referral type</th>
-            <th>Status</th>
-            <th style="width: 12%">Postcode</th>
-            <th style="width: 19%">Local authority</th>
+            <th class="col-1">&nbsp;</th>
+            <th class="col-2">Target date</th>
+            <th class="col-3">Customer</th>
+            <th class="col-4">Referral type</th>
+            <th class="col-5">Status</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><span class="urgent">Urgent</span></td>
             <td><span class="">11 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Paul Stokes</a></span>
@@ -69,10 +64,10 @@
               <span class="col-heading booked"><span class="sticker">Booked: 25 July</span></span>
               <small class="small-grey">Assigned to Julie Smith</small>
             </td>
-            <td>NG4 1AA</td>
-            <td class="truncate">Nottingham City</td>
+            <td>Beeston, Nottingham<br />NG9 1BB</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">12 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Holly Peterson</a></span>
@@ -83,10 +78,10 @@
               <span class="col-heading booked"><span class="sticker">Booked: 25 July</span></span>
               <small class="small-grey">Assigned to Julie Smith</small>
             </td>
-            <td>NG3 0BG</td>  
-            <td>Nottingham County</td>
+            <td>Long Eaton, Nottingham<br />NG4 6DX</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">13 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Margaret Smith</a></span>
@@ -97,10 +92,10 @@
               <span class="col-heading booked"><span class="sticker">Booked: 30 July</span></span>
               <small class="small-grey">Assigned to Tim Jones</small>
             </td>
-            <td>NG1 1AA</td>
-            <td>Nottingham City</td>
+            <td>Chilwell, Nottingham<br />NG9 4YT</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">14 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Noel Jenkins</a></span>
@@ -111,8 +106,7 @@
               <span class="col-heading booked"><span class="sticker">Booked: 1 August</span></span>
               <small class="small-grey">Assigned to Grant Phi&hellip;</small>
             </td>
-            <td>NG1 6TY</td>
-            <td>Nottingham City</td>
+            <td>Mansfield, Nottingham<br />NG1 1BB</td>
           </tr>
         </tbody>
       </table>

@@ -31,48 +31,43 @@
 
       <div class="filters">
 
-        <h3>Filter</h3>
+        <h3>Showing</h3>
         <ul>  
           <li><a href="team-referrals">All</a></li>
           <li class="bold">Pending</li>
           <li><a href="team-referrals-booked">Booked</a></li>
         </ul>
-        &nbsp;&nbsp;
-        <h3>Sort by</h3>
-        <select name="select">
-          <option value="" selected>Most urgent first</option> 
-          <option value="">Date added (latest first)</option>
-        </select>
 
       </div>{# /filters #}
 
       <table id="searchable-table" class="m-b-l truncate display">
         <thead>
           <tr>
-            <th style="width: 12%">Target date</th>
-            <th style="width: 18%">Customer</th>
-            <th style="width: 17%">Referral type</th>
-            <th>Status</th>
-            <th style="width: 12%">Postcode</th>
-            <th style="width: 19%">Local authority</th>
+            <th class="col-1">&nbsp;</th>
+            <th class="col-2">Target date</th>
+            <th class="col-3">Customer</th>
+            <th class="col-4">Referral type</th>
+            <th class="col-5">Status</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><span class="urgent">Urgent</span></td>
             <td><span class="bold due">10 July</span></td>
             <td>
-              <span class="col-heading"><a href="referrals/referral-details">Graham Highfields</a></span>
+              <span class="col-heading"><a href="#">Graham Highfields</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
             <td>Disability claim</td>
             <td>
               <span class="col-heading pending"><span class="sticker">Pending</span></span>
-              <small class="small-grey">Assigned to John Wilcox</small>
+              <small class="small-grey">Assigned to John Wil&hellip;</small>
             </td>
-            <td>NG2 11G</td>
-            <td>Nottingham County</td>
+            <td>Mansfield, Nottingham<br />NG12 9LO</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="bold due">12 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Jill Perkins</a></span>
@@ -83,10 +78,10 @@
               <span class="col-heading pending"><span class="sticker">Pending</span></span>
               <small class="small-grey">Assigned to Julie Smith</small>
             </td>
-            <td>NG12 9TY</td>
-            <td>Nottingham County</td>
+            <td>Long Eaton, Nottingham<br />NG4 8TU</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="bold due">13 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Steven Callum</a></span>
@@ -97,10 +92,10 @@
               <span class="col-heading pending"><span class="sticker">Pending</span></span>
               <small class="small-grey">Assigned to Tim Jones</small>
             </td>
-            <td>NG1 3BB</td>
-            <td>Nottingham City</td>
+            <td>Mansfield, Nottingham<br />NG1 1BB</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">28 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Grant Harley</a></span>
@@ -111,10 +106,10 @@
               <span class="col-heading pending"><span class="sticker">Pending</span></span>
               <small class="small-grey">Assigned to Tim Jones</small>
             </td>
-            <td>NG1 P98</td>
-            <td>Nottingham City</td>
+            <td>Ilkeston, Nottingham<br />NG14 9TY</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">28 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Sam Kramer</a></span>
@@ -125,8 +120,7 @@
               <span class="col-heading pending"><span class="sticker">Pending</span></span>
               <small class="small-grey">Assigned to Julie Smith</small>
             </td>
-            <td>NG1 4TR</td>
-            <td>Nottingham County</td>
+            <td>Mansfield, Nottingham<br />NG12 7UJ</td>
           </tr>
         </tbody>
       </table>

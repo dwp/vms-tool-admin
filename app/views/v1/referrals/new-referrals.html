@@ -31,7 +31,7 @@
 
       <div class="filters">
 
-        <h3>Filter</h3>
+        <h3>Showing</h3>
         <ul>  
           <li class="bold">All</li>
           <li><a href="new-referrals-received">Received</a></li>
@@ -49,16 +49,17 @@
       <table id="searchable-table" class="m-b-l truncate display">
         <thead>
           <tr>
-            <th style="width: 12%">Target date</th>
-            <th style="width: 18%">Customer</th>
-            <th style="width: 17%">Referral type</th>
-            <th>Status</th>
-            <th style="width: 12%">Postcode</th>
-            <th style="width: 19%">Local authority</th>
+            <th class="col-1">&nbsp;</th>
+            <th class="col-2">Target date</th>
+            <th class="col-3">Customer</th>
+            <th class="col-4">Referral type</th>
+            <th class="col-5">Status</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td><span class="urgent">Urgent</span></td>
             <td><span class="bold due">12 July</span></td>
             <td>
               <span class="col-heading"><a href="/{{ versionNumber() }}/referrals/referral-details-peter-arnold">Peter Arnold</a></span>
@@ -69,10 +70,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Leeds</small>
             </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
+            <td>Mansfield, Nottingham<br />NG14 2AY</td>
           </tr>
           <tr>
+            <td><span class="urgent">Urgent</span></td>
             <td><span class="bold due">13 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Jade Smith</a></span>
@@ -83,10 +84,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Paul Jones</small>
             </td>
-            <td>NG1 1BB</td>
-            <td class="truncate">Nottingham City</td>
+            <td>Beeston, Nottingham<br />NG9 1BB</td>
           </tr>
           <tr>
+            <td><span class="urgent">Urgent</span></td>
             <td><span class="bold due">13 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Louise Jones</a></span>
@@ -97,10 +98,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Reviewed by Sandra&hellip;</small>
             </td>
-            <td>NG1 0BB</td>
-            <td>Nottingham County</td>
+            <td>Bramcote, Nottingham<br />NG6 9TY</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="bold due">13 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Graham Highfields</a></span>
@@ -111,10 +112,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Reviewed by Sandra&hellip;</small>
             </td>
-            <td>NG1 8BB</td>
-            <td>Nottingham County</td>
+            <td>Wollaton, Nottingham<br />NG4 8HU</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">22 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Gemma Rigby</a></span>
@@ -125,10 +126,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Paul Jones</small>
             </td>
-            <td>NG10 3BB</td>
-            <td>Nottingham City</td>
+            <td>Long Eaton, Nottingham<br />NG4 6DX</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">25 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Margaret Smith</a></span>
@@ -139,10 +140,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Lincoln</small>
             </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham City</td>
+            <td>Chilwell, Nottingham<br />NG9 4YT</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">12 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Louise Jones</a></span>
@@ -153,10 +154,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Rot&hellip;</small>
             </td>
-            <td>NG1 2BB</td>
-            <td>Nottingham City</td>
+            <td>Beeston, Nottingham<br />NG6 3DB</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">28 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Margaret MacBean</a></span>
@@ -167,10 +168,10 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Patrick&hellip;</small>
             </td>
-            <td>NG1 4BB</td>
-            <td>Nottingham City</td>
+            <td>Long Eaton, Nottingham<br />NG2 9PT</td>
           </tr>
           <tr>
+            <td><span class="visually-hidden">z</span></td>
             <td><span class="">28 July</span></td>
             <td>
               <span class="col-heading"><a href="#">Louise Jones</a></span>
@@ -181,8 +182,21 @@
               <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Leeds</small>
             </td>
-            <td>NG1 2BG</td>
-            <td>Nottingham County</td>
+            <td>Long Eaton, Nottingham<br />NG12 2TH</td>
+          </tr>
+          <tr>
+            <td><span class="visually-hidden">z</span></td>
+            <td><span class="">01 August</span></td>
+            <td>
+              <span class="col-heading"><a href="#">Gaynor Williams</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td>
+              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
+              <small class="small-grey">Transferred from Cardiff</small>
+            </td>
+            <td>Ilkeston, Nottingham<br />NG14 9TY</td>
           </tr>
         </tbody>
       </table>
