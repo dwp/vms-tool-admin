@@ -444,10 +444,11 @@ tbody td {
       padding: 5px;
       width: 300px;
     }
-    ::-webkit-input-placeholder {
-      color:$grey-1;
-    }
   }
+}
+
+::-webkit-input-placeholder {
+  color:$grey-1;
 }
 
 // Hide unnecessary things
