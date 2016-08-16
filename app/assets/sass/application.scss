@@ -240,7 +240,6 @@ body .span-width {
   font-size: 19px;
 }
 
-
 // Table styles 
 
 
@@ -248,21 +247,22 @@ body .span-width {
 
 table {
   th.col-1 {
-    width: 1%;
+    width: 7%;
   }
   .col-2 {
-    width: 12%;
+    width: 13.5%;
   }
   .col-3 {
-    width: 22%;
+    width: 21%;
   }
   .col-4 {
-    width: 17%;
+    width: 22%;
   }
   .col-5 {
-    width: 18%;
+    width: 21%;
   }
-  .col-5 {
+  .col-6 {
+    width: 21%;
   }
 }
 
@@ -453,12 +453,28 @@ tbody td {
 
 // Hide unnecessary things
 
-.dataTables_length,
-.dataTables_info,
-.dataTables_paginate {
-  display: none;
-}
+// .dataTables_length,
+// .dataTables_info,
+// .dataTables_paginate {
+//   display: none;
+// }
 
+.dataTables_paginate a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 7px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: $page-colour;
+  border: 1px solid $border-colour;
+  color: $govuk-blue;
+  &.current {
+    background-color: $turquoise;
+    color: $page-colour;
+    font-weight: bold;
+    border-color: $turquoise;
+  }
+}
 
 .sidebar.primary {
   // background-color: $highlight-colour;

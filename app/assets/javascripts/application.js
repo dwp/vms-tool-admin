@@ -137,8 +137,27 @@ $(document).ready(function() {
   } );
 
   // DataTable
-  var table = $('#searchable-table').DataTable();
+  var table = $('#searchable-table').DataTable({
+    "paging":       true,
+    "ordering":     false,
+    "info":         false,
+    "pageLength":   20,
+    "lengthChange": false,
+    "pagingType":  'simple_numbers'
+  });
 
   $("#searchable-table_filter").find('input').attr("placeholder", "Type to filter");
 
 });
+
+
+// "fnDrawCallback": function() {  
+//     var paginateRow = $(this).parent().prev().children('div.dataTables_paginate');
+//     var pageCount = Math.ceil((this.fnSettings().fnRecordsDisplay()) / this.fnSettings()._iDisplayLength);
+
+//     if (pageCount > 1) {
+//       paginateRow.css("display", "block");}
+//       else {
+//         paginateRow.css("display", "none");
+//       }
+//     }
