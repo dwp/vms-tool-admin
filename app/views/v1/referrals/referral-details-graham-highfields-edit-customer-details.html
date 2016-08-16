@@ -1,0 +1,80 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <form method="post" class="form">
+
+        <h1 class="form-title heading-large m-b-xl">
+          About the customer
+        </h1>
+
+        <fieldset class="m-b-s">
+
+          <div class="form-group m-b-ml">
+            <label class="form-label m-b-xs" for="title">Title</label>
+            <input type="text" class="form-control" id="title" value="Mr">
+          </div>
+
+          <div class="form-group m-b-ml">
+            <label class="form-label m-b-xs" for="full-name">Full name</label>
+            <input type="text" class="form-control" id="full-name" value="Graham Highfields">
+          </div>
+
+          <!-- Date of birth -->
+          <div class="form-group m-b-l">
+            <fieldset>
+              <legend class="form-label m-b-xs">Date of birth</legend>
+
+              <div class="form-date">
+
+                <div class="form-group form-group-day">
+                  <label for="dob-day" class="form-hint">Day</label>
+                  <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31" value="12">
+                </div>
+
+                <div class="form-group form-group-month">
+                  <label for="dob-month" class="form-hint">Month</label>
+                  <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12" value="08">
+                </div>
+
+                <div class="form-group form-group-year">
+                  <label for="dob-year" class="form-hint">Year</label>
+                  <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014" value="1984">
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div><!-- / Date of birth -->
+
+          <div class="form-group">
+            <a href="javascript:history.back()" class="button">Save</a>
+            <a href="javascript:history.back()" class="button text">Cancel</a>
+          </div>
+
+        </fieldset>
+
+      </form>
+    
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

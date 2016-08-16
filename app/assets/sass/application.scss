@@ -8,6 +8,9 @@
 // Utility classes used for nudging spacing
 @import 'utility';
 
+// 'Chosen' styles for the search select input
+@import 'chosen';
+
 // Font Overrides
 *:not(.token) {
   font-family: $Helvetica-Regular !important; 
@@ -706,7 +709,35 @@ ul.action-list {
   }
 }
 
+// Chosen search/select field
 
+html body .chosen-container {
+  width: 100% !important;
+  font-size: 16px !important;
+  
+
+  .chosen-single {
+    color: red;
+    height: auto;
+    // height: 30px;
+    color: $text-colour;
+    background: none;
+    background-color: $grey-3;
+    padding: 5px 10px;
+    drop-shadow: none;
+    border: 1px solid $grey-2;
+    box-shadow: none;
+  }
+  li {
+    padding: 10px !important;
+    line-height: 20px !important;
+  }
+  li.active-result.highlighted {
+    background: none;
+    background-color: $turquoise;
+    
+  }
+}
 
 
 

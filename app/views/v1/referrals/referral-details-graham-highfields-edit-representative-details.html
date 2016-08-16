@@ -1,0 +1,108 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <form method="post" class="form">
+
+        <h1 class="form-title heading-large m-b-xl">
+          Customer&rsquo;s representative
+        </h1>
+
+        <div class="form-group m-b-m">
+
+          <fieldset class="m-b-s">
+
+            <legend class="form-label m-b-s">Does the customer have a Personal Acting Body or Corporate Acting&nbsp;Body?</legend>
+
+            <label class="block-label" for="choice1-1" data-target="panel1">
+              <input id="choice1-1" type="radio" name="choice1" value="yes" checked="checked">
+              Confirmed PAB or CAB
+            </label>
+
+            <label class="block-label" for="choice1-2" data-target="panel1">
+              <input id="choice1-2" type="radio" name="choice1" value="no">
+              Potential PAB or CAB
+            </label>
+
+            <label class="block-label" for="choice1-3">
+              <input id="choice1-3" type="radio" name="choice1" value="no">
+              No acting body
+            </label>
+
+            <div id="panel1" class="panel panel-border-narrow m-b-xs">
+
+              <div class="m-b-ml">
+                <label class="form-label m-b-xs" for="rep-title">Representative&rsquo;s title</label>
+                <input type="text" class="form-control" id="rep-title" value="Mr">
+              </div>
+
+              <div class="m-b-ml">
+                <label class="form-label m-b-xs" for="rep-name">Representative&rsquo;s full name</label>
+                <input type="text" class="form-control" id="rep-name" value="Daniel Angel">
+              </div>
+
+              <div class="form-group m-b-ml">
+                <label class="form-label m-b-xs" for="rep-number">Representative&rsquo;s phone number</label>
+                <input type="text" class="form-control form-control-1-4" id="rep-number" value="0115 787 897">
+              </div>
+
+              <fieldset class="m-b-s">
+
+                <legend class="form-label m-b-s">Representative&rsquo;s address</legend>
+
+                <label class="block-label" for="choice3-1">
+                  <input id="choice3-1" type="radio" name="choice3" value="yes" checked="checked">
+                  Same as customer address
+                </label>
+
+                <label class="block-label" for="choice3-2" data-target="panel2">
+                  <input id="choice3-2" type="radio" name="choice3" value="no">
+                  Other address
+                </label>
+
+              </fieldset>
+
+              <div id="panel2" class="js-hidden m-b-xs m-t-m">
+
+              {# Postcode lookup #}
+                {% import "includes/postcode-lookup.html" as postcode %}
+                {{ postcode.label('Representative’s postcode') }}
+              {# Postcode lookup #}
+
+              </div>{# /panel #}
+
+          </div>{# / panel #}
+
+        </fieldset>
+
+      </div>
+
+      <div class="form-group">
+        <a href="javascript:history.back()" class="button">Save</a>
+        <a href="javascript:history.back()" class="button text">Cancel</a>
+      </div>
+
+    </form>
+    
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

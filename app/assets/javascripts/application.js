@@ -150,6 +150,7 @@ $(document).ready(function() {
 
 });
 
+// Code for hiding pagination if only one page - can't get it to work at the moment
 
 // "fnDrawCallback": function() {  
 //     var paginateRow = $(this).parent().prev().children('div.dataTables_paginate');
@@ -161,3 +162,16 @@ $(document).ready(function() {
 //         paginateRow.css("display", "none");
 //       }
 //     }
+
+
+// Chosen select
+
+$(document).ready(function() {
+  var config = {
+    '.chosen-select' : {},
+  }
+  for (var selector in config) {
+    $(selector).chosen(config[selector]);
+  }
+
+});

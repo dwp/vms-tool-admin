@@ -1,0 +1,123 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Peter Arnold - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <a href="../referrals" class="link-back">Back to referrals</a>
+    </div>
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <div style="float:left; width:80%;">
+      <h1 class="form-title heading-large m-b-l">Peter Arnold</h1>
+    </div>
+
+    <div style="float:right; width:15%;">
+      <a href="" class="print font-xsmall">Print</a>
+    </div>
+
+    {% include "v1/referrals/includes/details-peter-arnold.html" %}
+
+  </div>{# /column-two-thirds #}
+
+  <div class="column-one-third">
+
+    <div class="sidebar primary not-assigned">
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned</h4>
+      <p><label for="visit-reason">Visit reason</label></p>
+      <p>
+      <select id="visit-reason" data-placeholder="Choose a reason for this visit" class="chosen-select" tabindex="2">
+        <option value=""></option>
+        <option value="#">AA Claim Completion</option>
+        <option value="#">AA Special Rules</option>
+        <option value="#">Benefit Cap</option>
+        <option value="#">Benefit Entitlement Check</option>
+        <option value="#">Bereavement</option>
+        <option value="#">CA Claim Completion</option>
+        <option value="#">Centenarian Visit</option>
+        <option value="#">Change of Circumstances</option>
+        <option value="#">Claim Integrity In Doubt</option>
+        <option value="#">CMG</option>
+        <option value="#">Combined Customer-CAB Visit</option>
+        <option value="#">Combined Customer-PAB Visit</option>
+        <option value="#">Compliance Visit</option>
+        <option value="#">Corporate Acting Body</option>
+        <option value="#">DLA Claim Completion</option>
+        <option value="#">DLO Visit</option>
+        <option value="#">DWP - Other</option>
+        <option value="#">ESA - Benefit Integrity</option>
+        <option value="#">ESA - ESA50 Completion</option>
+        <option value="#">ESA - FTA WCA</option>
+        <option value="#">ESA - FTA WFI</option>
+        <option value="#">ESA - New Claims</option>
+        <option value="#">ESA - Other</option>
+        <option value="#">Exception Payment</option>
+        <option value="#">Fairer Charging New Ass.</option>
+        <option value="#">Fairer Charging Review</option>
+        <option value="#">GMS</option>
+        <option value="#">Habitual Residence</option>
+        <option value="#">Income Support - New Claim</option>
+        <option value="#">Income Support - Other</option>
+        <option value="#">IS - Benefit Integrity</option>
+        <option value="#">Learning Focused Interview FTA</option>
+        <option value="#">Living Together As A Couple</option>
+        <option value="#">Non Declaration Of A NSP</option>
+        <option value="#">Overpayment Delivery - Civil Penalty</option>
+        <option value="#">Payment Query</option>
+        <option value="#">PC Application Completion</option>
+        <option value="#">Performance Measurement</option>
+        <option value="#">Personal Acting Body</option>
+        <option value="#">PIP1 Claim Completion</option>
+        <option value="#">PIP2 Claim Completion</option>
+        <option value="#">PIP Claim - Special Rules</option>
+        <option value="#">PIP Discrepancy</option>
+        <option value="#">PIP Reassessment</option>
+        <option value="#">PC2 Review</option>
+        <option value="#">Reputational Visit</option>
+        <option value="#">Security Check</option>
+        <option value="#">Self-Employed</option>
+        <option value="#">SP Claim Completion</option>
+        <option value="#">Trial Work Stream</option>
+        <option value="#">Under 18 DLA Claim Completion</option>
+        <option value="#">Under16 Appointee</option>
+        <option value="#">UC - Benefit Integrity</option>
+        <option value="#">UC - FTA WCA</option>
+        <option value="#">UC - FTA WFI</option>
+        <option value="#">UC - Other</option>
+        <option value="#">UC - UC50 Completion</option>
+        <option value="#">Verification</option>
+      </select>
+      </p>
+
+      <p><a href="referral-details-peter-arnold-reviewed" class="button">Mark as reviewed</a></p>
+
+    </div>
+    {# /sidebar #}
+
+
+
+    {% include "v1/referrals/includes/cleared-sidebar.html" %}
+
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

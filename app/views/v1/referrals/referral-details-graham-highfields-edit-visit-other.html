@@ -1,0 +1,103 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <form method="post" class="form">
+
+        <h1 class="form-title heading-large m-b-xl">
+          <span class="heading-secondary">
+            8 of 9
+          </span>
+          Information for the visiting team
+        </h1>
+
+        <div class="form-group">
+          <label class="form-label m-b-xs" for="reason">Customer health conditions (optional)</label>
+          <textarea class="form-control" id="reason" rows="5"></textarea>
+        </div>
+
+        {# risk factor #}
+        <div class="form-group">
+
+          <fieldset class="inline">
+            <legend class="form-label m-b-xs">Risk factors
+              <span class="form-hint">
+                For example, dog in the house, aggressive customer, unacceptable customer behaviour&nbsp;(UCB).
+              </span>
+            </legend>
+            <label class="block-label" for="choice1-1" data-target="panel-risk">
+              <input id="choice1-1" type="radio" name="choice1" value="yes" checked="checked">
+              Yes
+            </label>
+            <label class="block-label" for="choice1-2">
+              <input id="choice1-2" type="radio" name="choice1" value="no">
+              No
+            </label>
+          </fieldset>
+
+          <div id="panel-risk" class="panel panel-border-narrow">
+            <div class="form-group m-b-ml">
+              <label class="form-label m-b-xs" for="risk-details">Risk details</label>
+              <input type="text" class="form-control" id="risk-details" value="UCB">
+            </div>
+          </div>{# / panel-risk #}
+
+        </div>{# / risk factor #}
+
+        {# accessibility #}
+        <div class="form-group m-b-ml">
+
+          <fieldset class="inline">
+            <legend class="form-label m-b-xs">Accessibility requirements
+              <span class="form-hint">
+                For example, use back door.
+              </span>
+            </legend>
+            <label class="block-label" for="choice2-1" data-target="panel-accessiblity">
+              <input id="choice2-1" type="radio" name="choice2" value="yes" checked="checked">
+              Yes
+            </label>
+            <label class="block-label" for="choice2-2">
+              <input id="choice2-2" type="radio" name="choice2" value="no">
+              No
+            </label>
+          </fieldset>
+
+          <div id="panel-accessiblity" class="panel panel-border-narrow m-b-s">
+            <div class="form-group m-b-ml">
+              <label class="form-label m-b-xs" for="risk-details">Accessibility details</label>
+              <input type="text" class="form-control" id="risk-details" value="Use back door">
+            </div>
+          </div>{# / panel-risk #}
+
+        </div>{# / accessibility #}
+
+        <div class="form-group">
+          <a href="javascript:history.back()" class="button">Save</a>
+          <a href="javascript:history.back()" class="button text">Cancel</a>
+        </div>
+
+      </form>
+    
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

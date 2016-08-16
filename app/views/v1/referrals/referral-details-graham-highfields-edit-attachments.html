@@ -1,0 +1,46 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <form method="post" class="form">
+
+      <h1 class="form-title heading-large m-b-xl">
+        Attachments
+      </h1>
+
+      <div class="form-group m-b-xl">
+        <label class="form-label m-b-s" for="file-upload">Upload any supporting documents (optional)
+          <span class="form-hint">For example, forms that require completing.</span>
+        </label>
+        <input type="file" class="file-upload" id="file-upload" name="attachmentsSupportingDocs">
+      </div>
+
+      <div class="form-group">
+        <a href="javascript:history.back()" class="button">Save</a>
+        <a href="javascript:history.back()" class="button text">Cancel</a>
+      </div>
+
+    </form>
+    
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}
