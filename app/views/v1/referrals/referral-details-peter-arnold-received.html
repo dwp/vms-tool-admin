@@ -24,12 +24,18 @@
 
   <div class="column-two-thirds position-relative">
 
-    <div style="float:left; width:80%;">
-      <h1 class="form-title heading-large m-b-l">Peter Arnold</h1>
-    </div>
-
-    <div style="float:right; width:15%;">
-      <a href="" class="print font-xsmall">Print</a>
+    <div>
+      <div class="m-t-xl m-b-xs"></div>
+      <div>
+        <div style="float:left; width:80%;">
+          <h1 class="form-title heading-large m-b-l m-t-0">
+            Peter Arnold
+          </h1>
+        </div>
+        <div style="float:right; width:15%;">
+          <a href="" class="print font-xsmall">Print</a>
+        </div>
+      </div>
     </div>
 
     {% include "v1/referrals/includes/details-peter-arnold.html" %}
@@ -39,7 +45,9 @@
   <div class="column-one-third">
 
     <div class="sidebar primary not-assigned">
-      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned</h4>
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned 
+        <span class="urgent">Urgent</span>
+      </h4>
       <p><label for="visit-reason">Visit reason</label></p>
       <p>
       <select id="visit-reason" data-placeholder="Choose a reason for this visit" class="chosen-select" tabindex="2">

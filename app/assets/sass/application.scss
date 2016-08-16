@@ -396,6 +396,12 @@ tbody td {
   }
 }
 
+h4 .urgent {
+  float: right;
+  margin-top: 4px;
+}
+
+
 .due {
   color: $red;
 }
@@ -536,7 +542,7 @@ ul.action-list {
   padding-left: 28px;
   background-position: 0 9px;
   // position: absolute;
-  margin-top: 52px;
+  margin-top: 7px;
   // right: 0;
   float: right;
   // display: none;
@@ -714,8 +720,6 @@ ul.action-list {
 html body .chosen-container {
   width: 100% !important;
   font-size: 16px !important;
-  
-
   .chosen-single {
     color: red;
     height: auto;
@@ -724,9 +728,15 @@ html body .chosen-container {
     background: none;
     background-color: $grey-3;
     padding: 5px 10px;
-    drop-shadow: none;
     border: 1px solid $grey-2;
     box-shadow: none;
+
+    span {
+      width: 100%;
+      background-image: url(/public/images/icons/arrows-vertical.svg);
+      background-repeat: no-repeat;
+      background-position: right 8px;
+    }
   }
   li {
     padding: 10px !important;
@@ -739,5 +749,9 @@ html body .chosen-container {
   }
 }
 
-
-
+html body .chosen-container.chosen-with-drop {
+    border: 1px solid $grey-2;
+  span {
+    background-position: right -94px;
+  }
+}
