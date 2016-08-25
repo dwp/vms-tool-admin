@@ -4,7 +4,7 @@
 {% extends "layout_dwp.html" %}
 
 {% block page_title %}
- New referrals - Visiting Service Management System 
+ Available referrals - Visiting Service Management System 
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,7 @@
       <div class="nav-tabbed">
 
         <ul>
-          <li class="current"><span>New referrals</span></li>
+          <li class="current"><span>Available referrals</span></li>
           <li><a href="team-referrals"><span>Team referrals</span></a></li>
           <li><a href="my-referrals"><span>My referrals</span></a></li>
         </ul>
@@ -36,13 +36,15 @@
           <li class="bold">All</li>
           <li><a href="new-referrals-received">Received</a></li>
           <li><a href="new-referrals-reviewed">Reviewed</a></li>
+          <li><a href="new-referrals-received">UCB</a></li>
+          <li><a href="new-referrals-received">Unsafe areas</a></li>
         </ul>
-        &nbsp;&nbsp;
+{#         &nbsp;&nbsp;
         <h3>Sort by</h3>
         <select name="select">
           <option value="" selected>Most urgent first</option> 
           <option value="">Date added (latest first)</option>
-        </select>
+        </select> #}
 
       </div>{# /filters #}
 
@@ -54,7 +56,7 @@
             <th class="col-3">Customer</th>
             <th class="col-4">Referral type</th>
             <th class="col-5">Status</th>
-            <th class="col-6">Location</th>
+            <th class="col-6">Visit address</th>
           </tr>
         </thead>
         <tbody>
@@ -63,14 +65,13 @@
             <td><span class="bold due">12 July</span></td>
             <td>
               <span class="col-heading"><a href="/{{ versionNumber() }}/referrals/referral-details-peter-arnold-received">Peter Arnold</a></span>
-              <small class="small-grey">AA 12 34 56 D</small>
+              <small class="small-grey">AA 12 34 56 D &nbsp;<span class="ucb">UCB</span></small>
             </td>
             <td>&mdash;</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Leeds</small>
             </td>
-            <td>Mansfield<br />NG14 2AY</td>
+            <td>Mansfield<br />NG14 2AY &nbsp;<span class="ucb">Unsafe</span></td>
           </tr>
           <tr>
             <td><span class="urgent">Urgent</span></td>
@@ -79,9 +80,8 @@
               <span class="col-heading"><a href="#">Jade Smith</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
-            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td><abbr title="Personal Independent Payment">PIP</abbr> claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Paul Jones</small>
             </td>
             <td>Kirkby-in-Ashfield<br />NG9 1BB</td>
@@ -95,7 +95,6 @@
             </td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Reviewed by Sandra&hellip;</small>
             </td>
             <td>Bramcote<br />NG6 9TY</td>
@@ -109,7 +108,6 @@
             </td>
             <td>&mdash;</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Reviewed by Sandra&hellip;</small>
             </td>
             <td>Wollaton<br />NG4 8HU</td>
@@ -123,10 +121,9 @@
             </td>
             <td><abbr title ="">AA</abbr> claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Paul Jones</small>
             </td>
-            <td>Long Eaton<br />NG4 6DX</td>
+            <td>Long Eaton<br />NG4 6DX &nbsp;<span class="ucb">Unsafe</span></td>
           </tr>
           <tr>
             <td><span class="visually-hidden">z</span></td>
@@ -137,7 +134,6 @@
             </td>
             <td>&mdash;</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Lincoln</small>
             </td>
             <td>Chilwell<br />NG9 4YT</td>
@@ -151,7 +147,6 @@
             </td>
             <td>Disability claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Rot&hellip;</small>
             </td>
             <td>Beeston<br />NG6 3DB</td>
@@ -165,7 +160,6 @@
             </td>
             <td>&mdash;</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Rejected by Patrick&hellip;</small>
             </td>
             <td>Long Eaton<br />NG2 9PT</td>
@@ -179,7 +173,6 @@
             </td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Leeds</small>
             </td>
             <td>Long Eaton<br />NG12 2TH</td>
@@ -193,7 +186,6 @@
             </td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
             <td>
-              <span class="col-heading grey"><span class="sticker">Not assigned</span></span>
               <small class="small-grey">Transferred from Cardiff</small>
             </td>
             <td>Ilkeston<br />NG14 9TY</td>
