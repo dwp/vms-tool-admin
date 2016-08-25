@@ -37,38 +37,47 @@
               No fixed address
             </label>
 
-        <div id="panel1" class="panel panel-border-narrow m-b-xs">
+            <div id="panel1" class="panel panel-border-narrow m-b-xs">
 
-          <div class="clear m-b-s"></div>
+          <h2 class="heading-medium m-b-s">Customer&rsquo;s address</h2>
 
-         <fieldset class="form-group u-clearfix m-b-0">
-
-          <div class="form-group">
-
-            <label class="form-label m-b-xs" for="address-building-street">Building and street</label>
-            <input type="text" class="form-control m-b-s" id="address-building-street" name="address-building-street" value="6 Camdale Road">
-
-            <label class="form-label visually-hidden" for="address-building-street2">Building and street line 2 (optional)</label>
-            <input type="text" class="form-control" id="address-building-street2" name="address1" value="">
-
+          <div class="form-group m-b-m">
+            <label class="form-label m-b-xs" for="postcode">Customer&rsquo;s postcode</label>
+            <input type="text" class="form-control postcode m-b-s" id="postcode" value="NG1 9TY">
+            <button id="add-button" class="button button-add-another">Find address</button>
+            <p class="bold-xsmall">No results found, enter customer&rsquo;s address manually</p>
           </div>
 
-          <div class="form-group">
+          <fieldset class="form-group u-clearfix m-b-xl">
+
+            <div class="form-group">
+
+              <label class="form-label m-b-xs" for="address-building-street">Building and street</label>
+              <input type="text" class="form-control m-b-s" id="address-building-street" name="address-building-street" value="6 Camdale Road">
+
+              <label class="form-label visually-hidden" for="address-building-street2">Building and street line 2 (optional)</label>
+              <input type="text" class="form-control" id="address-building-street2" name="address1" value="">
+
+            </div>
+
+            <div class="form-group">
             <label class="form-label m-b-xs" for="address-town">Town or city</label>
             <input type="text" class="form-control" id="address-town" name="address-town" value="Meanwood">
           </div>
 
-          <div class="form-group">
-            <label class="form-label m-b-xs" for="address-county">County</label>
-            <input type="text" class="form-control" id="address-county" name="address-county" value="Leeds">
-          </div>
+            <div class="form-group js-error-container m-t-ns">
+              <label class="form-label m-b-xs" for="address-postcode">Postcode</label>
+              <input type="text" class="form-control form-control-1-4" id="address-postcode" name="address-postcode" value="LS6 4BB">
+            </div>
 
-          <div class="form-group js-error-container m-t-ns">
-            <label class="form-label m-b-xs" for="address-postcode">Postcode</label>
-            <input type="text" class="form-control form-control-1-4" id="address-postcode" name="address-postcode" value="LS6 4BB">
-          </div>
+          </fieldset>
 
-        </fieldset>
+          <h2 class="heading-medium m-b-s m-t-m">Correspondence address (if different)</h2>
+
+          {# Postcode lookup #}
+          {% import "includes/postcode-lookup.html" as postcode %}
+          {{ postcode.label('Correspondence postcode') }}
+          {# Postcode lookup #}
 
         </div>{# / panel1 #}
 
