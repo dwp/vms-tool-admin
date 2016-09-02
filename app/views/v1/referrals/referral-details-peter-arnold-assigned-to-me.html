@@ -4,7 +4,7 @@
 {% extends "layout_dwp.html" %}
 
 {% block page_title %}
- Graham Highfields - Visiting Service Management System 
+ Peter Arnold - Visiting Service Management System 
 {% endblock %}
 
 {% block content %}
@@ -15,25 +15,25 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-      <a href="../referrals/team-referrals" class="link-back">Back to referrals</a>
+      <a href="../referrals" class="link-back">Back to referrals</a>
     </div>
 
   </div>{# /grid-row #}
 
-  <div class="panel panel-border-wide alert-success m-t-l">
-    <p>Referral assigned to Aaron Kirk</p>
-  </div>
-
   <div class="grid-row">
 
   <div class="column-two-thirds position-relative">
+
+    <div class="panel panel-border-wide alert-success m-t-l">
+      <p>Referral assigned to Julie Smith</p>
+    </div>
 
     <div>
       <div class="m-t-xl m-b-xs"></div>
       <div>
         <div style="float:left; width:80%;">
           <h1 class="form-title heading-large m-b-l m-t-0">
-            Graham Highfields
+            Peter Arnold
           </h1>
         </div>
         <div style="float:right; width:15%;">
@@ -46,34 +46,33 @@
 
       <ul>
         <li class="current"><span>Referral details</span></li>
-        <li><a href="referral-details-graham-highfields-activity-history"><span>Activity history (3)</span></a></li>
+        <li><a href="referral-details-peter-arnold-activity-history"><span>Activity history (0)</span></a></li>
       </ul>
 
       <div class="clear"></div>
 
     </div>{# /nav-tabbed #}
 
-    {% include "v1/referrals/includes/details-graham-highfields.html" %}
+    {% include "v1/referrals/includes/details-peter-arnold.html" %}
 
   </div>{# /column-two-thirds #}
 
   <div class="column-one-third">
 
-    <div class="sidebar primary pending">
-      <h4 class="heading-medium m-b-xs m-t-0 status-heading pending">Pending <span class="urgent">Urgent</span></h4>
-      <p class="font-xsmall">Assigned to Aaron Kirk</p>
-      <p><a href="book-visit" class="button">Book visit</a></p>
+    <div class="sidebar primary not-assigned">
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned 
+        <span class="urgent">Urgent</span>
+      </h4>
       <ul class="action-list font-xsmall bold">
-        <li><a href="#">Assign to me</a></li>
-        <li><a href="#">Return to team</a></li>
+        <li><a href="#">Assign this to me</a></li>
         <li><a href="#">Assign to another visiting officer</a></li>
         <li><a href="#">Transfer to another team</a></li>
-        <li><a href="#">Mark as not urgent</a></li>
+        <li><a href="#">Mark as urgent</a></li>
       </ul>
     </div>
     {# /sidebar #}
 
-    {% include "v1/referrals/includes/dates-graham-highfields.html" %}
+    {% include "v1/referrals/includes/dates-peter-arnold.html" %}
 
     {% include "v1/referrals/includes/cleared-sidebar.html" %}
 

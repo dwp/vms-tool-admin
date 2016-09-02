@@ -138,12 +138,12 @@ $(document).ready(function() {
 
   // DataTable
   var table = $('#searchable-table').DataTable({
-    "paging":       true,
+    "paging":       false,
     "ordering":     false,
     "info":         false,
-    "pageLength":   20,
+    // "pageLength":   200,
     "lengthChange": false,
-    "pagingType":  'simple_numbers'
+    // "pagingType":  'simple_numbers'
   });
 
   $("#searchable-table_filter").find('input').attr("placeholder", "Type to filter");

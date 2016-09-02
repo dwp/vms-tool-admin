@@ -20,7 +20,7 @@
     <div class="nav-tabbed">
 
       <ul>
-        <li><a href="new-referrals"><span>Available referrals</span></a></li>
+        <li><a href="available-referrals"><span>Available referrals</span></a></li>
         <li><a href="team-referrals"><span>Team referrals</span></a></li>
         <li class="current"><span>My referrals</span></li>
       </ul>
@@ -31,30 +31,39 @@
 
     <div class="filters">
 
-      <h3>Showing</h3>
-      <ul>
-        <li class="bold">All</li>
-        <li><a href="my-referrals-pending">Pending</a></li>
-        <li><a href="my-referrals-booked">Booked</a></li>
-      </ul>
+        <h3>Showing</h3>
+        <ul>  
+          <li class="bold">All</li>
+          <li><a href="#">Pending</a></li>
+          <li><a href="#">Booked</a></li>
+          <li><a href="#">UCB</a></li>
+          <li><a href="#">Unsafe areas</a></li>
+        </ul>
+        &nbsp;&nbsp;
+        <h3>Sort by</h3>
+        <select name="select">
+          <option value="" selected>Urgency</option> 
+          <option value="">Target date</option>
+        </select>
 
-    </div>{# /filters #}
+      </div>{# /filters #}
 
-    <table id="searchable-table" class="m-b-l truncate display">
+      <table id="searchable-table" class="m-b-l truncate display">
         <thead>
           <tr>
-            <th class="col-1">&nbsp;</th>
-            <th class="col-2">Target date</th>
-            <th class="col-3">Customer</th>
-            <th class="col-4">Referral type</th>
-            <th class="col-5">Status</th>
-            <th class="col-6">Visit address</th>
+            <th class="col-1">Target</th>
+            <th class="col-2">Customer</th>
+            <th class="col-3">Referral type</th>
+            <th class="col-4">Status</th>
+            <th class="col-5">Visit address</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="">11 July</span></td>
+            <td class="date">
+              30 Aug<br>
+              <span class="urgent">Urgent</span>
+            </td>
             <td>
               <span class="col-heading"><a href="referral-details-paul-stokes">Paul Stokes</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
@@ -67,8 +76,10 @@
             <td>Beeston<br />NG9 1BB</td>
           </tr>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="">12 July</span></td>
+            <td class="date">
+              30 Aug<br>
+              <span class="urgent">Urgent</span>
+            </td>
             <td>
               <span class="col-heading"><a href="#">Hannah Peterson</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
@@ -81,8 +92,10 @@
             <td>Long Eaton<br />NG4 6DX</td>
           </tr>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="bold due">12 July</span></td>
+            <td class="date">
+              20 Sept<br>
+              <span class="urgent">Urgent</span>
+            </td>
             <td>
               <span class="col-heading"><a href="#">Bart <span style="display:inline-block">Perkins-Phillips</span></a></span>
               <small class="small-grey">AA 12 34 56 D</small>
@@ -95,10 +108,34 @@
             <td>Papplewick<br />NG4 8TU</td>
           </tr>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="">28 July</span></td>
+            <td class="date">
+              04 Sept<br>
+              <span class="target">
+                <span class="target-1"></span>
+                <span class="target-2"></span>
+                <span class="target-3"></span>
+              </span>
+            </td>
             <td>
               <span class="col-heading"><a href="#">Karl Rainer</a></span>
+              <small class="small-grey">AA 12 34 56 D</small>
+            </td>
+            <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
+            <td>
+              <span class="col-heading pending"><span class="sticker">Pending</span></span>
+              <small class="small-grey">Assigned to Julie Smith</small>
+            </td>
+            <td>Mansfield<br />NG12 7UJ</td>
+          </tr>
+          <tr>
+            <td class="date">
+              15 Sept<br>
+              <span class="target">
+                <span class="target-1"></span>
+              </span>
+            </td>
+            <td>
+              <span class="col-heading"><a href="#">Sam Kramer</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>

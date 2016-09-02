@@ -103,6 +103,14 @@ legend {
   }
 }
 
+a.button {
+  &:hover,
+  &:focus {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+}
+
 // declaration
 .legal_message {
 	margin: 30px 0 30px;
@@ -249,14 +257,14 @@ body .span-width {
 // Column widths
 
 table {
-  th.col-1 {
-    width: 7%;
+  .col-1 {
+    width: 11%;
   }
   .col-2 {
-    width: 13.5%;
+    width: 25.5%;
   }
   .col-3 {
-    width: 21%;
+    width: 24%;
   }
   .col-4 {
     width: 22%;
@@ -264,8 +272,29 @@ table {
   .col-5 {
     width: 21%;
   }
-  .col-6 {
-    width: 21%;
+}
+
+table.available {
+  .col-1 {
+    width: 12%;
+  }
+  .col-2 {
+    width: 30%;
+  }
+  .col-3 {
+    width: 32%;
+  }
+  .col-4 {
+    width: 22%;
+  }
+}
+
+td.add {
+  position: relative;
+  .button {
+    position: absolute;
+    right: 0;
+    top: 12px;
   }
 }
 
@@ -401,6 +430,36 @@ h4 .urgent {
   margin-top: 4px;
 }
 
+table .urgent {
+  font-size: 11px;
+  padding: 1px 3px;
+}
+
+table .date {
+  font-weight: bold;
+}
+
+.target {
+  display: block;
+  margin-top: 8px;
+  span {
+    display: block;
+    height: 6px;
+    width: 15px;
+    float: left;
+    margin-right: 5px;
+  }
+  .target-1 {
+    background-color: $grass-green;
+  }
+  .target-2 {
+    background-color: $yellow;
+  }
+  .target-3 {
+    background-color: $red;
+  }
+}
+
 
 .due {
   color: $red;
@@ -524,6 +583,34 @@ h4 .urgent {
   margin-left: 15px;
   border-top: 1px solid #ccc;
   padding-top: 0px;
+}
+
+
+.targets {
+  margin-top: 20px;
+  dl {
+    float: left;
+    border-left: 4px solid blue;
+    padding-left: 7px;
+    width: 29%;
+    &.target-1 {
+      border-color: $grass-green;
+    }
+    &.target-2 {
+      border-color: $yellow;
+    }
+    &.target-3 {
+      border-color: $red;
+    }
+    dt {
+      color: $grey-1;
+      font-size: 14px;
+    }
+    dd {
+      font-weight: bold;
+      font-size: 19px;
+    }
+  }
 }
 
 
@@ -755,3 +842,55 @@ html body .chosen-container.chosen-with-drop {
     background-position: right -94px;
   }
 }
+
+
+// Cards
+
+.card {
+  border: 5px solid $grey-3;
+  padding: 15px;
+  position: relative;
+  // margin-right: 15px;
+  // background-color: red;
+  margin-left: 15px;
+  margin-bottom: 15px;
+
+  .urgent {
+    position: absolute;
+    right: 15px;
+  }
+
+  .heading-medium {
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+  }
+
+  dl {
+    dt {
+      color: $grey-1;
+      font-size: 16px;
+    }
+    dd {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
