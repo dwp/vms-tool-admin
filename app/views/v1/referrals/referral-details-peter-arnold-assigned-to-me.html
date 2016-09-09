@@ -20,13 +20,13 @@
 
   </div>{# /grid-row #}
 
+  <div class="panel panel-border-wide alert-success m-t-l">
+      <p>Referral assigned to Julie Smith</p>
+    </div>
+
   <div class="grid-row">
 
   <div class="column-two-thirds position-relative">
-
-    <div class="panel panel-border-wide alert-success m-t-l">
-      <p>Referral assigned to Julie Smith</p>
-    </div>
 
     <div>
       <div class="m-t-xl m-b-xs"></div>
@@ -46,7 +46,7 @@
 
       <ul>
         <li class="current"><span>Referral details</span></li>
-        <li><a href="referral-details-peter-arnold-activity-history"><span>Activity history (0)</span></a></li>
+        <li><a href="#"><span>Activity history (0)</span></a></li>
       </ul>
 
       <div class="clear"></div>
@@ -59,15 +59,75 @@
 
   <div class="column-one-third">
 
-    <div class="sidebar primary not-assigned">
-      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned 
-        <span class="urgent">Urgent</span>
-      </h4>
-      <ul class="action-list font-xsmall bold">
-        <li><a href="#">Assign this to me</a></li>
-        <li><a href="#">Assign to another visiting officer</a></li>
-        <li><a href="#">Transfer to another team</a></li>
-        <li><a href="#">Mark as urgent</a></li>
+    <div class="sidebar primary pending">
+      <h4 class="heading-medium m-t-0 m-b-m status-heading pending">Pending <span class="urgent">Urgent</span></h4>
+      <p class="font-xsmall">Assigned to Julie Smith</p>
+{#       <p class="m-b-xs"><label for="visit-reason">Visit reason</label></p> #}
+      <p>
+      <select id="visit-reason" data-placeholder="Choose a reason for this visit" class="chosen-select" tabindex="2">
+        <option value=""></option>
+        <option value="#">AA claim completion</option>
+        <option value="#">AA special rules</option>
+        <option value="#">Benefit cap</option>
+        <option value="#">Benefit entitlement check</option>
+        <option value="#">Bereavement</option>
+        <option value="#">CA claim completion</option>
+        <option value="#">Centenarian visit</option>
+        <option value="#">Change of circumstances</option>
+        <option value="#">Claim integrity in doubt</option>
+        <option value="#">CMG</option>
+        <option value="#">Combined customer-CAB visit</option>
+        <option value="#">Combined customer-PAB visit</option>
+        <option value="#">Compliance visit</option>
+        <option value="#">Corporate acting body (CAB)</option>
+        <option value="#">DLA claim completion</option>
+        <option value="#">DLO visit</option>
+        <option value="#">DWP - other</option>
+        <option value="#">ESA - benefit integrity</option>
+        <option value="#">ESA - ESA50 completion</option>
+        <option value="#">ESA - FTA WCA</option>
+        <option value="#">ESA - FTA WFI</option>
+        <option value="#">ESA - new claims</option>
+        <option value="#">ESA - other</option>
+        <option value="#">Exception payment</option>
+        <option value="#">Fairer charging new ass.</option>
+        <option value="#">Fairer charging review</option>
+        <option value="#">GMS</option>
+        <option value="#">Habitual residence</option>
+        <option value="#">Income Support - new claim</option>
+        <option value="#">Income Support - other</option>
+        <option value="#">IS - Benefit integrity</option>
+        <option value="#">Learning focused interview FTA</option>
+        <option value="#">Living together as a couple</option>
+        <option value="#">Non declaration of a NSP</option>
+        <option value="#">Overpayment delivery - civil penalty</option>
+        <option value="#">Payment query</option>
+        <option value="#">PC application completion</option>
+        <option value="#">Performance measurement</option>
+        <option value="#">Personal acting body</option>
+        <option value="#">PIP1 claim completion</option>
+        <option value="#">PIP2 claim completion</option>
+        <option value="#">PIP claim - special rules</option>
+        <option value="#">PIP discrepancy</option>
+        <option value="#">PIP reassessment</option>
+        <option value="#">PC2 review</option>
+        <option value="#">Reputational visit</option>
+        <option value="#">Security check</option>
+        <option value="#">Self-employed</option>
+        <option value="#">SP claim completion</option>
+        <option value="#">Trial work stream</option>
+        <option value="#">Under 18 DLA claim completion</option>
+        <option value="#">Under16 appointee</option>
+        <option value="#">UC - benefit integrity</option>
+        <option value="#">UC - FTA WCA</option>
+        <option value="#">UC - FTA WFI</option>
+        <option value="#">UC - other</option>
+        <option value="#">UC - UC50 completion</option>
+        <option value="#">Verification</option>
+      </select>
+      </p>
+
+      <p><a href="referral-details-peter-arnold-reviewed" class="button">Mark as reviewed</a></p>
       </ul>
     </div>
     {# /sidebar #}
