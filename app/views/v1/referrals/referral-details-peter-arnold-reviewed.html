@@ -62,13 +62,14 @@
     <div class="sidebar primary pending">
       <h4 class="heading-medium m-t-0 m-b-m status-heading pending">Pending <span class="urgent">Urgent</span></h4>
       <p class="font-xsmall">Assigned to Julie Smith</p>
-      <p><a href="book-visit" class="button">Book visit</a></p>
+      <p><a href="#" class="button">Book visit</a></p>
       <ul class="action-list font-xsmall bold">
         <li><a href="#">Return to team</a></li>
         <li><a href="#">Assign to another visiting officer</a></li>
         <li><a href="#">Transfer to another team</a></li>
         <li><a href="#">Mark as urgent</a></li>
       </ul>
+      {% include "v1/referrals/includes/record-outcome.html" %}
     </div>
     {# /sidebar #}
 

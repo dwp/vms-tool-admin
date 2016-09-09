@@ -58,6 +58,7 @@
   <div class="column-one-third">
 
     <div class="sidebar primary pending">
+
       <h4 class="heading-medium m-b-xs m-t-0 status-heading pending">Pending <span class="urgent">Urgent</span></h4>
       <p class="font-xsmall">Assigned to John Wilcox</p>
       <p><a href="book-visit" class="button">Book visit</a></p>
@@ -68,6 +69,8 @@
         <li><a href="referral-details-graham-highfields-transfer-to-another-1">Transfer to another team</a></li>
         <li><a href="referral-details-graham-highfields-marked-as-not-urgent">Mark as not urgent</a></li>
       </ul>
+      {% include "v1/referrals/includes/record-outcome.html" %}
+
     </div>
     {# /sidebar #}
 
