@@ -20,10 +20,6 @@
 
   </div>{# /grid-row #}
 
-  <div class="panel panel-border-wide alert-success m-t-l">
-      <p>Referral has been reviewed</p>
-    </div>
-
   <div class="grid-row">
 
   <div class="column-two-thirds position-relative">
@@ -33,7 +29,7 @@
       <div>
         <div style="float:left; width:80%;">
           <h1 class="form-title heading-large m-b-l m-t-0">
-            Peter Arnold
+            Peter Arnold</span>
           </h1>
         </div>
         <div style="float:right; width:15%;">
@@ -42,38 +38,23 @@
       </div>
     </div>
 
-    <div class="nav-tabbed">
-
-      <ul>
-        <li class="current"><span>Referral details</span></li>
-        <li><a href="#"><span>Activity history (0)</span></a></li>
-      </ul>
-
-      <div class="clear"></div>
-
-    </div>{# /nav-tabbed #}
-
-    {% include "v1/referrals/includes/details-peter-arnold-reviewed.html" %}
+    {% include "v1/referrals/includes/details-peter-arnold.html" %}
 
   </div>{# /column-two-thirds #}
 
   <div class="column-one-third">
 
-    <div class="sidebar primary pending">
-      <h4 class="heading-medium m-t-0 m-b-m status-heading pending">Pending <span class="urgent">Urgent</span></h4>
-      <p class="font-xsmall">Assigned to Julie Smith</p>
-      <p><a href="#" class="button">Book visit</a></p>
-      <ul class="action-list font-xsmall bold">
-        <li><a href="#">Return to team</a></li>
-        <li><a href="#">Assign to another visiting officer</a></li>
-        <li><a href="#">Transfer to another team</a></li>
-        <li><a href="#">Mark as urgent</a></li>
-      </ul>
-      {% include "v1/referrals/includes/record-outcome.html" %}
+    <div class="sidebar primary not-assigned">
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned 
+        <span class="urgent">Urgent</span>
+      </h4>
+
+      <p><a href="referral-details-peter-arnold-assigned-to-me" class="button">Own this referral</a></p>
+
     </div>
     {# /sidebar #}
 
-    {% include "v1/referrals/includes/dates-peter-arnold.html" %}
+
 
     {% include "v1/referrals/includes/cleared-sidebar.html" %}
 
