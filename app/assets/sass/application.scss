@@ -344,6 +344,12 @@ td.add {
       border-color: $orange;
     }
   }
+  &.interpreter {
+    color: $fuschia;
+    .sticker {
+      border-color: $fuschia;
+    }
+  }
   &.booked {
     color: $green;
     .sticker {
@@ -558,6 +564,9 @@ table .date {
   &.pending {
     border-color: $orange;
   }
+  &.interpreter {
+    border-color: $fuschia;
+  }
   &.not-assigned {
     border-color: $grey-1;
   }
@@ -570,6 +579,9 @@ table .date {
   }
   &.pending {
     color: $orange;
+  }
+  &.interpreter {
+    color: $fuschia;
   }
   &.not-assigned {
     color: $grey-1;
