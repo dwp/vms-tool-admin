@@ -21,7 +21,7 @@
   </div>{# /grid-row #}
 
   <div class="panel panel-border-wide alert-success m-t-l">
-    <p>Referral returned to team</p>
+    <p>Returned to team</p>
   </div>
 
   <div class="grid-row">
@@ -60,16 +60,11 @@
   <div class="column-one-third">
 
     <div class="sidebar primary not-assigned">
-      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned <span class="urgent">Urgent</span></h4>
-      <ul class="action-list font-xsmall bold">
-        <li><a href="#">Assign this to me</a></li>
-        <li><a href="#">Assign to another visiting officer</a></li>
-        <li><a href="#">Transfer to another team</a></li>
-        <li><a href="#">Mark as not urgent</a></li>
-      </ul>
-      {% include "v1/referrals/includes/record-outcome.html" %}
-    </div>
-    {# /sidebar #}
+      <h4 class="heading-medium m-t-0 m-b-m status-heading not-assigned">Not assigned 
+        <span class="urgent">Urgent</span>
+      </h4>
+      <p><a href="#" class="button">Own this referral</a></p>
+    </div>{# /sidebar #}
 
     {% include "v1/referrals/includes/dates-graham-highfields.html" %}
 
