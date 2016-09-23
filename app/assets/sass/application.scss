@@ -898,11 +898,12 @@ html body .chosen-container.chosen-with-drop {
 
 .guidance-notes {
   margin-top: 10px;
-  a[rel="external"]:after {
-    background-position: right 2px;
-  }
 }
 
+.guidance-notes a[rel="external"]:after,
+.font-xsmall a[rel="external"]:after {
+  background-position: right 2px;
+}
 
 
 
