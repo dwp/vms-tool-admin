@@ -1,0 +1,34 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Graham Highfields - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{# {% if message = 'booked' %}
+  <p>This is a message</p>
+{% endif %} #}
+
+<main id="content" role="main">
+
+  </div>{# /grid-row #}
+
+  <div class="grid-row">
+
+  <div class="column-two-thirds position-relative">
+
+    <h1 class="heading-medium">Are you sure you want to cancel this visit?</h1>
+
+    <a href="referral-details-graham-highfields?alert=booked" class="button">Yes, cancel this visit</a> <a href="referral-details-graham-highfields-booked" class="button text">No, go back</a>
+
+  </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

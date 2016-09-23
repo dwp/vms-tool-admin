@@ -96,7 +96,8 @@ legend {
   text-decoration: underline;
   box-shadow: none;
   &:hover, &:focus {
-    color: $link-hover-colour;
+    color: $link-hover-colour !important;
+    text-decoration: underline !important;
   }
   &:active {
     top: 0;
