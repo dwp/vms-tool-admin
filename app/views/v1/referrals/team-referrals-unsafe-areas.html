@@ -1,0 +1,57 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Team referrals - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <h1 class="form-title heading-large m-b-xl">Referrals</h1>
+
+  <div class="container">
+
+      <div class="nav-tabbed">
+
+        <ul>
+          <li><a href="available-referrals"><span>Available referrals</span></a></li>
+          <li class="current"><span>Team referrals</span></li>
+          <li><a href="my-referrals"><span>My referrals</span></a></li>
+        </ul>
+
+        <div class="clear"></div>
+
+      </div>{# /nav-tabbed #}
+
+      <div class="filters">
+
+        <h3>Showing</h3>
+        <ul>  
+          <li><a href="team-referrals">All</a></li>
+          <li><a href="team-referrals-pending">Pending</a></li>
+          <li><a href="team-referrals-booked">Booked</a></li>
+          <li><a href="team-referrals-ucb">UCB</a></li>
+          <li class="bold">Unsafe areas</li>
+        </ul>
+        &nbsp;&nbsp;
+        <h3>Sort by</h3>
+        <select name="select">
+          <option value="" selected>Urgency</option> 
+          <option value="">Target date</option>
+        </select>
+
+      </div>{# /filters #}
+
+      {% include "v1/referrals/includes/no-results.html" %}
+
+  </div>{# /container #}
+
+</main>
+
+{% endblock %}

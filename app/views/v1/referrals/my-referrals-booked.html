@@ -4,7 +4,7 @@
 {% extends "layout_dwp.html" %}
 
 {% block page_title %}
- My referrals - Visiting Service Management System  
+ My referrals - Visiting Service Management System 
 {% endblock %}
 
 {% block content %}
@@ -31,32 +31,41 @@
 
     <div class="filters">
 
-      <h3>Showing</h3>
-      <ul>
-        <li><a href="my-referrals">All</a></li>
-        <li><a href="my-referrals-pending">Pending</a></li>
-        <li class="bold">Booked</li>
-      </ul>
+        <h3>Showing</h3>
+        <ul>  
+          <li><a href="my-referrals">All</a></li>
+          <li><a href="my-referrals-pending">Pending</a></li>
+          <li class="bold">Booked</li>
+          <li><a href="my-referrals-ucb">UCB</a></li>
+          <li><a href="my-referrals-unsafe-areas">Unsafe areas</a></li>
+        </ul>
+        &nbsp;&nbsp;
+        <h3>Sort by</h3>
+        <select name="select">
+          <option value="" selected>Urgency</option> 
+          <option value="">Target date</option>
+        </select>
 
-    </div>{# /filters #}
+      </div>{# /filters #}
 
-    <table id="searchable-table" class="m-b-l truncate display">
+      <table id="searchable-table" class="m-b-l truncate display">
         <thead>
           <tr>
-            <th class="col-1">&nbsp;</th>
-            <th class="col-2">Target date</th>
-            <th class="col-3">Customer</th>
-            <th class="col-4">Referral type</th>
-            <th class="col-5">Status</th>
-            <th class="col-6">Visit address</th>
+            <th class="col-1">Target</th>
+            <th class="col-2">Customer</th>
+            <th class="col-3">Referral type</th>
+            <th class="col-4">Status</th>
+            <th class="col-5">Visit address</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="">11 July</span></td>
+            <td class="date">
+              30 Aug<br>
+              <span class="urgent">Urgent</span>
+            </td>
             <td>
-              <span class="col-heading"><a href="#">Paul Stokes</a></span>
+              <span class="col-heading"><a href="referral-details-paul-stokes">Paul Stokes</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
             </td>
             <td><abbr title ="Personal Independent Payment">PIP</abbr> claim</td>
@@ -67,8 +76,10 @@
             <td>Beeston<br />NG9 1BB</td>
           </tr>
           <tr>
-            <td><span class="visually-hidden">z</span></td>
-            <td><span class="">12 July</span></td>
+            <td class="date">
+              30 Aug<br>
+              <span class="urgent">Urgent</span>
+            </td>
             <td>
               <span class="col-heading"><a href="#">Hannah Peterson</a></span>
               <small class="small-grey">AA 12 34 56 D</small>
