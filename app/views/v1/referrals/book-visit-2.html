@@ -1,0 +1,26 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Referral details - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+
+
+      {% include "includes/calendar.html" %}
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}
