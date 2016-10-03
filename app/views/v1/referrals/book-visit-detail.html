@@ -1,0 +1,73 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Referral details - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+    <a href="../referrals/book-visit" class="link-back">Back to choose a time</a>
+
+    <h1 class="heading-large">Book this visit for Wednesday, 7 September 2016</h1>
+
+    <p>Visiting officer<br ><strong class="bold">John Wilcox</strong></p>
+
+    <p>Visiting<br ><strong class="bold">Graham Highfields</strong></p>
+
+    <p>Address<br ><strong class="bold">17 Guy Close, Beeston, Nottingham, NG9 4FF</strong></p>
+
+{#     <p>Date<br ><strong class="bold">7 September 2016</strong></p> #}
+
+    <form>
+
+        <div class="form-group">
+
+        </div>{# /form-group #}
+
+        <div class="form-group">
+
+          <div class="form-group">
+            <label for="start-time" class="form-label">Start time</label>
+            <input id="start-time" type="text" class="form-control form-control-1-4" value="10:00">
+          </div>
+
+          <div class="form-group">
+            <label for="end-time" class="form-label">End time</label>
+            <input id="end-time" type="text" class="form-control form-control-1-4">
+          </div>
+
+          <div class="clear"></div>
+
+          <div style="position: relative; left: -5px;">
+          <p class="m-b-s"><label><input type="checkbox"> Interpreter needed</label></p>
+          <p><label><input type="checkbox"> Send an email prompt</label></p>
+          </div>
+
+        </div>{# /form-group #}
+
+{#         <div class="form-group">
+          <a href="referral-details-graham-highfields-booked" class="button">Book visit</a>
+          <a href="../referrals/book-visit" class="button text">Cancel</a>
+        </div> #}
+
+        <div class="form-group">
+          <a href="book-visit-complete" class="button">Book visit</a>
+          <a href="../referrals/book-visit" class="button text">Cancel</a>
+        </div>
+
+      </form>
+
+  </div>{# /grid-row #}
+
+</main>
+
+{% endblock %}

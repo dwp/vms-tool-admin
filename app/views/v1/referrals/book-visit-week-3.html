@@ -20,23 +20,23 @@
     <h1 class="heading-large">Book a visit</h1>
     <p class="lede">Choose a time for John Wilcox to visit Graham Highfields</p>
 
-{#     <p>Benefits entitlement check<br />
+{# 
+    <p>Benefits entitlement check<br />
     6 Camdale Road, Meanwood, Leeds, LS6 4BB</p> #}
 
     <div class="calendar-header">
 
-      <h3 class="heading-small m-t-0 m-b-0">{# John Wilcox&rsquo;s calendar<br /> #}5 – 10 Sept 2016</h3>
+      <h3 class="heading-small m-t-0 m-b-0">19 – 24 Sept 2016</h3>
 
       <ul>
-{#         <li><a href="" class="blocky-link prev">&laquo; Previous week</a></li> #}
-{#         <li><a href="" class="blocky-link this-month">This week</a></li> #}
-        <li><a href="book-visit-week-2" class="blocky-link next">Next week &raquo;</a></li>
+        <li><a href="book-visit-week-2" class="blocky-link prev">&laquo; Previous week</a></li>
+        <li><a href="#" class="blocky-link next">Next week &raquo;</a></li>
+        <li><a href="book-visit" class="blocky-link this-week">Today</a></li>
       </ul>
-
       
     </div>
 
-    {% include "v1/referrals/includes/calendar-week-1.html" %}
+    {% include "v1/referrals/includes/calendar-week-3.html" %}
 
   </div>{# /grid-row #}
 
