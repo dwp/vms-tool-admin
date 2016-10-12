@@ -783,6 +783,7 @@ ul.action-list {
 .calendar .visit {
   background-color: rgba(255,210,138,0.6);
   border: 1px solid rgba(0,0,0,0.1);
+  // background-color: rgba(210,210,210,1);
   &:hover {
     background-color: rgba(255,210,138,0.8);
   }
@@ -950,6 +951,7 @@ div.day-listing {
     display: block;
     height: 40px;
     margin-bottom: 1px;
+    // background-color: rgba(0,130,59,0.05);
   }
 
   .passed {
