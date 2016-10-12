@@ -1,0 +1,45 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "referrals" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+ Edit booking - Visiting Service Management System 
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <a href="../referrals/referral-details-graham-highfields-booked" class="link-back">Graham Highfields</a>
+
+      <h1 class="heading-large">Edit booking</h1>
+
+      <p class="lede">John Wilcox is currently booked to visit Graham Highfields at 10 - 10:45 on Wednesday, 7 September.</p> 
+      <p><a href="book-visit-detail-edit" class="button">Change date or time</a></p>
+
+    </div>{# /column-two-thirds #}
+
+  </div>{# /grid-row #}
+
+  <div class="calendar-header">
+
+    <h3 class="heading-small m-t-0 m-b-0">{# John Wilcox&rsquo;s calendar<br /> #}5 &ndash; 10 Sept 2016</h3>
+
+    <ul>
+      <li><a href="#" class="blocky-link next">Next week &raquo;</a></li>
+    </ul>
+      
+  </div>{# /calendar-header #}
+
+  {% include "v1/referrals/includes/calendar-week-1-complete.html" %}
+
+</main>
+
+{% endblock %}

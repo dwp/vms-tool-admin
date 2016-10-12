@@ -15,30 +15,28 @@
 
   <div class="grid-row">
 
-    <a href="../referrals/referral-details-graham-highfields" class="link-back">Graham Highfields</a>
+    <div class="column-two-thirds">
 
-    <h1 class="heading-large">Book a visit</h1>
-    <p class="lede">Choose a time for John Wilcox to visit Graham Highfields</p>
+      <a href="../referrals/referral-details-graham-highfields" class="link-back">Graham Highfields</a>
 
-{#     <p>Benefits entitlement check<br />
-    6 Camdale Road, Meanwood, Leeds, LS6 4BB</p> #}
+      <h1 class="heading-large">Book a visit</h1>
+      <p class="lede">Choose a time for John Wilcox to visit Graham Highfields</p>
 
-    <div class="calendar-header">
-
-      <h3 class="heading-small m-t-0 m-b-0">{# John Wilcox&rsquo;s calendar<br /> #}5 &ndash; 10 Sept 2016</h3>
-
-      <ul>
-{#         <li><a href="" class="blocky-link prev">&laquo; Previous week</a></li> #}
-{#         <li><a href="" class="blocky-link this-month">This week</a></li> #}
-        <li><a href="book-visit-week-2" class="blocky-link next">Next week &raquo;</a></li>
-      </ul>
-
-      
-    </div>
-
-    {% include "v1/referrals/includes/calendar-week-1.html" %}
+    </div>{# /column-two-thirds #}
 
   </div>{# /grid-row #}
+
+  <div class="calendar-header">
+
+    <h3 class="heading-small m-t-0 m-b-0">{# John Wilcox&rsquo;s calendar<br /> #}5 &ndash; 10 Sept 2016</h3>
+
+    <ul>
+      <li><a href="book-visit-week-2" class="blocky-link next">Next week &raquo;</a></li>
+    </ul>
+    
+  </div>
+
+  {% include "v1/referrals/includes/calendar-week-1.html" %}
 
 </main>
 
