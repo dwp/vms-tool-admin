@@ -175,3 +175,17 @@ $(document).ready(function() {
   }
 
 });
+
+// Calendar event pop-ups
+
+$(document).ready(function() {
+
+  var $allVisits = $(".event.visit");
+
+  $allVisits.click(function() {
+    $allVisits.not(this).removeClass("pop-up");
+    $(this).toggleClass("pop-up");
+    return false;
+  });
+
+});
