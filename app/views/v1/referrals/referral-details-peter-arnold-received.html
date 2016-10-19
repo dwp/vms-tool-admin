@@ -22,6 +22,10 @@
 
   <div class="grid-row">
 
+    {% if getData.message %}
+      <p id="message">This is the message area {{getData.message}}</p>
+    {% endif %}
+
   <div class="column-two-thirds position-relative">
 
     <div>

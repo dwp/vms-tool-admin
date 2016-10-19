@@ -21,4 +21,19 @@ router.post('/v1/account/log-in', function (req, res) {
 });
 
 
+// Code supplied by Gary for dealing with query strings
+// add your routes here
+router.use(function(req, res, next){
+  Object.assign(res.locals,{
+    postData: (req.body ? req.body : false)
+  });
+
+  Object.assign(res.locals,{
+    getData: (req.query ? req.query : false)
+  });
+
+  next();
+});
+
+
 module.exports = router;
