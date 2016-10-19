@@ -145,7 +145,6 @@ body .span-width {
   min-height: 100px;
 }
 
-
 // Navigation pri
 
 .nav {
@@ -242,6 +241,10 @@ body .span-width {
   span {
     position: relative;
     top: -1px;
+    span {
+      position: relative;
+      top: 0; 
+    }
   }
 }
 
@@ -1107,6 +1110,26 @@ html body .chosen-container.chosen-with-drop {
   background-position: right 2px;
 }
 
+// Inline add to my referrals
+
+.done {
+  background-color: mix(white, $turquoise, 90%);
+  // background-color: $grey-4;
+  td {
+    // text-align: right;
+    padding: 20px 0px;
+    position: relative;
+    border-left: 6px solid $turquoise;
+    padding-left: 20px;
+    a {
+      display: block;
+      text-align: right;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+    }
+  }
+}
 
 
 

@@ -126,6 +126,8 @@ $(document).ready(function() {
 
 });
 
+/*
+
 // Searchable table
 
 $(document).ready(function() {
@@ -149,6 +151,8 @@ $(document).ready(function() {
   $("#searchable-table_filter").find('input').attr("placeholder", "Type to filter");
 
 });
+
+*/
 
 // Code for hiding pagination if only one page - can't get it to work at the moment
 
@@ -189,3 +193,55 @@ $(document).ready(function() {
   });
 
 });
+
+// Own functionality
+
+// $(document).ready(function() {
+
+//   var $ownButtons = $(".add a");
+
+
+
+//   $ownButtons.click(function() {
+
+//     console.log($(this).parent().parent().find('.col-heading').text());
+//     return false;
+
+//   });
+
+// });
+
+/*
+
+// Own functionality
+
+$(document).ready(function() {
+
+  var $ownButtons = $(".add a");
+
+  // Replaces content of table row with message letting the user know that the referral has been added to their referrals
+  $ownButtons.click(function() {
+
+    var $row = $(this).parent().parent();
+    var $name = $(this).parent().parent().find('.col-heading').text();
+    $row.replaceWith( "<tr class='done'><td colspan='5'>" + $name + " added to &lsquo;my referrals&rsquo;&nbsp;&nbsp;<a href='' class='undo'>Undo</a></td></tr>" );
+
+    // Updates totals
+
+    $availableTotal = parseInt($("#available-refs-total").text()) - 1;
+    $("#available-refs-total").html($availableTotal);
+
+    $teamTotal = parseInt($("#team-refs-total").text()) + 1;
+    $("#team-refs-total").html($teamTotal);
+
+    $myTotal = parseInt($("#my-refs-total").text()) + 1;
+    $("#my-refs-total").html($myTotal);
+
+    return false;
+
+  });
+  
+
+});
+
+*/
