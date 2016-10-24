@@ -153,21 +153,6 @@ $(document).ready(function() {
 });
 
 
-
-// Code for hiding pagination if only one page - can't get it to work at the moment
-
-// "fnDrawCallback": function() {  
-//     var paginateRow = $(this).parent().prev().children('div.dataTables_paginate');
-//     var pageCount = Math.ceil((this.fnSettings().fnRecordsDisplay()) / this.fnSettings()._iDisplayLength);
-
-//     if (pageCount > 1) {
-//       paginateRow.css("display", "block");}
-//       else {
-//         paginateRow.css("display", "none");
-//       }
-//     }
-
-
 // Chosen select
 
 $(document).ready(function() {
