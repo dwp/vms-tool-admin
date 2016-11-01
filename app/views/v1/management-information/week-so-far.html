@@ -1,0 +1,315 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "management-information" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+  Management information - Visiting Service Management System
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <h1 class="form-title heading-large m-b-xl">
+    This week so far&nbsp;&nbsp;<span class="heading-secondary" style="display:inline-block">Monday, 5 September &ndash; now</span>
+  </h1>
+
+  <h2 class="heading-medium">New referrals received</h2>
+
+  <dl>
+    <dt>Total:</dt>
+    <dd>20</dd>
+  </dl>
+  <dl>
+    <dt>Jobcentres:</dt>
+    <dd>5</dd>
+    <dt>Third-party referrals:</dt>
+    <dd>0</dd>
+    <dt>Other visiting teams:</dt>
+    <dd>8</dd>
+  </dl>
+
+  <h2 class="heading-medium">In progress</h2>
+
+  <h3 class="heading-medium"><a href="#">Available</a></h3>
+  <dl>
+    <dt>Total:</dt>
+    <dd>54</dd>
+  </dl>
+  <dl>
+    <dt>Reviewed:</dt>
+    <dd>8</dd>
+    <dt>Received:</dt>
+    <dd>3</dd>
+    <dt>Transferred:</dt>
+    <dd>13</dd>
+  </dl>
+
+  <h3 class="heading-medium"><a href="#">Pending</a></h3>
+  <dl>
+    <dt>Total:</dt>
+    <dd>15</dd>
+  </dl>
+  <dl>
+    <dt>Urgent:</dt>
+    <dd>3</dd>
+    <dt>Unsafe areas:</dt>
+    <dd>13</dd>
+    <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
+    <dd>12</dd>
+  </dl>
+
+  <h3 class="heading-medium"><a href="#">Booked</a></h3>
+  <dl>
+    <dt>Total:</dt>
+    <dd>11</dd>
+  </dl>
+  <dl>
+    <dt>With interpreter:</dt>
+    <dd>8</dd>
+    <dt>Interpreter still needed:</dt>
+    <dd>3</dd>
+    <dt>Unsafe areas:</dt>
+    <dd>13</dd>
+    <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
+    <dd>12</dd>
+  </dl>
+
+  <div class="cleared">
+
+    <h3 class="heading-medium"><a href="#">Cleared referrals</a></h3>
+    <dl>
+      <dt>Total:</dt>
+      <dd>19</dd>
+    </dl>
+    <dl>
+      <dt>Cleared by phone:</dt>
+      <dd>5</dd>
+      <dt>Customer unavailable:</dt>
+      <dd>8</dd>
+      <dt>Marked as duplicate:</dt>
+      <dd>0</dd>
+      <dt>Rejected:</dt>
+      <dd>6</dd>
+    </dl>
+
+  </div>{# /cleared #}
+
+  <div class="nav-tabbed">
+    <ul>
+      <li class="current">Team members</li>
+      <li><a href="#">Referral types</a></li>
+      <li><a href="#">Location</a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>{# /nav-tabbed #}
+
+  <table class="sortable">
+{#     <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th colspan="2">In progress</th>
+        <th colspan="4">Cleared</th>
+      </tr>
+    </thead> #}
+    <thead>
+      <tr>
+        <th>Team member</th>
+        <th>Pending</th>
+        <th>Booked</th>
+        <th class="cleared">Total</th>
+        <th class="cleared">By phone</th>
+        <th class="cleared">Customer unavailable</th>
+        <th class="cleared">Rejected</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Aaron Kirk</td>
+      <td>2</td>
+      <td>2</td>
+      <td class="cleared">2</td>
+      <td class="cleared">2</td>
+      <td class="cleared">2</td>
+      <td class="cleared">1</td>
+    <tr>
+      <td>Amy Shackelford</td>
+      <td>6</td>
+      <td>6</td>
+      <td class="cleared">6</td>
+      <td class="cleared">6</td>
+      <td class="cleared">6</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Angelo Pullman</td>
+      <td>1</td>
+      <td>1</td>
+      <td class="cleared">1</td>
+      <td class="cleared">1</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Audra Earwood</td>
+      <td>5</td>
+      <td>2</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Dwain Pollan</td>
+      <td>9</td>
+      <td>0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">2</td>
+    </tr>
+    <tr>
+      <td>Geneva Nieto</td>
+      <td>4</td>
+      <td>0</td>
+      <td class="cleared">5</td>
+      <td class="cleared">0</td>
+      <td class="cleared">3</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Haywood Rayl</td>
+      <td>0</td>
+      <td>1</td>
+      <td class="cleared">4</td>
+      <td class="cleared">0</td>
+      <td class="cleared">2</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Heidi Garoutte</td>
+      <td>5</td>
+      <td>1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Helene Everson</td>
+      <td>0</td>
+      <td>1</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">5</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Henry Whitely</td>
+      <td>1</td>
+      <td>2</td>
+      <td class="cleared">5</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Holli Crooker</td>
+      <td>2</td>
+      <td>0</td>
+      <td class="cleared">3</td>
+      <td class="cleared">1</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Jazmin Maner</td>
+      <td>2</td>
+      <td>0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">3</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Katheleen Baylis</td>
+      <td>2</td>
+      <td>0</td>
+      <td class="cleared">3</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Kimbery Samson</td>
+      <td>2</td>
+      <td>0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Laci Guerrero</td>
+      <td>2</td>
+      <td>0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+    </tr>
+    <tr>
+      <td>Magnolia Guo</td>
+      <td>3</td>
+      <td>0</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">1</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Noemi Brasher</td>
+      <td>0</td>
+      <td>0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Reed Hamler</td>
+      <td>1</td>
+      <td>0</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Sherlene Holderman</td>
+      <td>3</td>
+      <td>1</td>
+      <td class="cleared">0</td>
+      <td class="cleared">0</td>
+      <td class="cleared">4</td>
+      <td class="cleared">0</td>
+    </tr>
+    <tr>
+      <td>Velda Brunson</td>
+      <td>2</td>
+      <td>2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">2</td>
+      <td class="cleared">0</td>
+      <td class="cleared">2</td>
+    </tr>
+    </tbody>
+
+  </table>
+
+</main>
+
+{% endblock %}
