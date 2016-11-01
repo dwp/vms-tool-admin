@@ -249,3 +249,21 @@ $(document).ready(function() {
   });
 
 });
+
+// JavaScript tabs (used on the ‘This week so far’ screen)
+
+$(document).ready(function(){
+  
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+
+})
+
+

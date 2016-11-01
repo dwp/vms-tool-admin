@@ -1208,7 +1208,7 @@ dl.stat-listing {
   dl.stat-listing {
     width: 200px;
     float: left;
-    margin-top: 17px;
+    margin-top: 12px;
     dt {
       // background-color: red;
       // width: 200px;
@@ -1217,9 +1217,114 @@ dl.stat-listing {
 
 }
 
+// tabs for table on how it works page
+
+// .container {
+
+//   margin: 0 auto;
+//   table {
+//     border-top: 1px solid $border-colour;
+//     th {
+//       padding-top: 40px;
+//     }
+//   }
+// }
+
+// ul.tabs {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   position: relative;
+//   top: 1px;
+// }
+
+ul.tabs li {
+  background: $page-colour;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid $page-colour;
+  text-decoration: underline;
+  color: $govuk-blue;
+  text-decoration: none;
+  background-color: $grey-3;
+  &:hover {
+    color: $link-hover-colour;
+  }
+  &.current {
+    span {
+      position: relative;
+      bottom: -1px;
+    }
+  }
+}
+
+// ul.tabs li.current {
+//   color: $text-colour;
+//   text-decoration: none;
+//   border: 1px solid $border-colour;
+//   border-bottom-color: $page-colour; 
+// }
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: inherit;
+}
 
 
 
+// .nav-tabbed {
+//   // background-color: red;
+//   border-bottom: 1px solid $border-colour;
+//   margin-bottom: 20px;
+//   // padding-bottom: 5px;
+//   a {
+//     text-decoration: none;
+//   }
+// }
 
+// .nav-tabbed ul {
+//   display: block;
+//   li {
+//     background: $page-colour;
+//     display: inline-block;
+//     cursor: pointer;
+//     border: 1px solid $panel-colour;
+//     background-color: $panel-colour;
+//     color: $govuk-blue;
+//     font-size: 19px;
+//     line-height: 24px;
+//     font-weight: bold;
+//     a {
+//       display: inline-block;
+//       padding: 10px 15px;
+//       &:hover {
+//       color: $link-hover-colour;
+//       }
+//     }
+//   }
+// }
 
-
+// .nav-tabbed ul li.current {
+//   color: $text-colour;
+//   text-decoration: none;
+//   border: 1px solid $border-colour;
+//   background-color: $page-colour;
+//   border-bottom: none;
+//   position: relative;
+//   bottom: -1px;
+//   padding: 10px 15px;
+//   padding-bottom: 16px;
+//   padding-top: 12px;
+//   span {
+//     position: relative;
+//     top: -1px;
+//     span {
+//       position: relative;
+//       top: 0; 
+//     }
+//   }
+// }
