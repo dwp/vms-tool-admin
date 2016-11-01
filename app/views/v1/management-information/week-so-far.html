@@ -17,92 +17,107 @@
     This week so far&nbsp;&nbsp;<span class="heading-secondary" style="display:inline-block">Monday, 5 September &ndash; now</span>
   </h1>
 
-  <h2 class="heading-medium">New referrals received</h2>
+  <h2 class="heading-medium keyline m-b-0">New referrals received</h2>
 
-  <dl>
-    <dt>Total:</dt>
-    <dd>20</dd>
-  </dl>
-  <dl>
-    <dt>Jobcentres:</dt>
-    <dd>5</dd>
-    <dt>Third-party referrals:</dt>
-    <dd>0</dd>
-    <dt>Other visiting teams:</dt>
-    <dd>8</dd>
-  </dl>
+  <div class="floated-stats">
 
-  <h2 class="heading-medium">In progress</h2>
-
-  <h3 class="heading-medium"><a href="#">Available</a></h3>
-  <dl>
-    <dt>Total:</dt>
-    <dd>54</dd>
-  </dl>
-  <dl>
-    <dt>Reviewed:</dt>
-    <dd>8</dd>
-    <dt>Received:</dt>
-    <dd>3</dd>
-    <dt>Transferred:</dt>
-    <dd>13</dd>
-  </dl>
-
-  <h3 class="heading-medium"><a href="#">Pending</a></h3>
-  <dl>
-    <dt>Total:</dt>
-    <dd>15</dd>
-  </dl>
-  <dl>
-    <dt>Urgent:</dt>
-    <dd>3</dd>
-    <dt>Unsafe areas:</dt>
-    <dd>13</dd>
-    <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
-    <dd>12</dd>
-  </dl>
-
-  <h3 class="heading-medium"><a href="#">Booked</a></h3>
-  <dl>
-    <dt>Total:</dt>
-    <dd>11</dd>
-  </dl>
-  <dl>
-    <dt>With interpreter:</dt>
-    <dd>8</dd>
-    <dt>Interpreter still needed:</dt>
-    <dd>3</dd>
-    <dt>Unsafe areas:</dt>
-    <dd>13</dd>
-    <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
-    <dd>12</dd>
-  </dl>
-
-  <div class="cleared">
-
-    <h3 class="heading-medium"><a href="#">Cleared referrals</a></h3>
-    <dl>
-      <dt>Total:</dt>
-      <dd>19</dd>
+    <dl class="big-number">
+      <dt class="visually-hidden">Total:</dt>
+      <dd>20</dd>
     </dl>
-    <dl>
-      <dt>Cleared by phone:</dt>
+
+    <dl class="stat-listing font-xsmall floated-stats">
+      <dt>Jobcentres:</dt>
       <dd>5</dd>
-      <dt>Customer unavailable:</dt>
-      <dd>8</dd>
-      <dt>Marked as duplicate:</dt>
+      <dt>Third-party referrals:</dt>
       <dd>0</dd>
-      <dt>Rejected:</dt>
-      <dd>6</dd>
+      <dt>Other visiting teams:</dt>
+      <dd>8</dd>
     </dl>
 
-  </div>{# /cleared #}
+  </div>{# /floated-stats #}
 
-  <div class="nav-tabbed">
+  <div class="clear"></div>
+
+  <h2 class="heading-medium keyline m-t-l">In progress</h2>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0"><a href="/{{ versionNumber() }}/referrals/available-referrals">Available</a></h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>54</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Received:</dt>
+        <dd>37</dd>
+        <dt>Reviewed:</dt>
+        <dd>7</dd>
+        <dt>Transferred:</dt>
+        <dd>10</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0"><a href="/{{ versionNumber() }}/referrals/team-referrals-pending">Pending</a></h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>15</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Urgent:</dt>
+        <dd>3</dd>
+        <dt>Unsafe areas:</dt>
+        <dd>13</dd>
+        <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
+        <dd>12</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0"><a href="/{{ versionNumber() }}/referrals/team-referrals-booked">Booked</a></h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>11</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>With interpreter:</dt>
+        <dd>8</dd>
+        <dt>Interpreter still needed:</dt>
+        <dd>3</dd>
+        <dt>Unsafe areas:</dt>
+        <dd>13</dd>
+        <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
+        <dd>12</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter cleared-stats">
+      <h3 class="heading-medium m-t-0 m-b-0">Cleared referrals</h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>19</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Cleared by phone:</dt>
+        <dd>5</dd>
+        <dt>Customer unavailable:</dt>
+        <dd>8</dd>
+        <dt>Marked as duplicate:</dt>
+        <dd>0</dd>
+        <dt>Rejected:</dt>
+        <dd>6</dd>
+      </dl>
+    </div>{# /cleared #}
+
+  </div>{# /grid-row #}
+
+  <div class="nav-tabbed m-t-xl">
     <ul>
       <li class="current">Team members</li>
       <li><a href="#">Referral types</a></li>
-      <li><a href="#">Location</a></li>
+      <li><a href="#">Locations</a></li>
     </ul>
     <div class="clear"></div>
   </div>{# /nav-tabbed #}
@@ -118,13 +133,13 @@
   <table class="sortable">
     <thead>
       <tr>
-        <th style="width: 22%">Team member</th>
-        <th style="width: 12%">Pending</th>
-        <th style="width: 12%">Booked</th>
-        <th style="width: 12%" class="cleared p-l-xs">Total</th>
-        <th class="cleared">By phone</th>
-        <th class="cleared">Customer unavailable</th>
-        <th class="cleared">Rejected</th>
+        <th style="width: 22%"><span>Team member</span></th>
+        <th style="width: 12%"><span>Pending</span></th>
+        <th style="width: 12%"><span>Booked</span></th>
+        <th style="width: 12%" class="cleared p-l-xs"><span>Total</span></th>
+        <th class="cleared"><span>By phone</span></th>
+        <th class="cleared"><span>Customer unavailable</span></th>
+        <th class="cleared"><span>Rejected</span></th>
       </tr>
     </thead>
     <tbody>
