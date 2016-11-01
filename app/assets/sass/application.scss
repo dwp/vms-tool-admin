@@ -1131,6 +1131,30 @@ html body .chosen-container.chosen-with-drop {
   }
 }
 
+.cleared {
+  background-color: $grey-4;
+}
+
+// Sortable tables
+
+thead th {
+  cursor: pointer;
+}
+
+
+.sorting_asc {
+  background-image: url(/public/images/icons/arrows-vertical.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.sorting_desc {
+  background-image: url(/public/images/icons/arrows-vertical.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+
 
 
 
