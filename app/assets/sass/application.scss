@@ -1239,3 +1239,9 @@ ul.tabs li {
 .fixedHeader-floating th {
   border-bottom: 2px solid $border-colour;
 }
+
+.sortable tbody tr:hover, 
+.sortable tbody tr:hover td.cleared {
+  background-color: $grey-4;
+  background-color: rgba(0,0,0,0.03);
+}

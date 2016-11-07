@@ -153,11 +153,11 @@ $(document).ready(function() {
 
   // DataTable
   var table = $('.sortable').DataTable({
+    "fixedHeader":  true,
     "paging":       false,
     "info":         false,
     "lengthChange": false,
     "searching":    false,
-    "fixedHeader":  true,
   }); 
 
 });
