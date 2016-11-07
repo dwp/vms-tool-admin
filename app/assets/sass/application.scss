@@ -1245,3 +1245,21 @@ ul.tabs li {
   background-color: $grey-4;
   background-color: rgba(0,0,0,0.03);
 }
+
+.sortable th,
+.sortable td {
+  text-align: right;
+}
+
+.sortable th:first-child,
+.sortable td:first-child {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
