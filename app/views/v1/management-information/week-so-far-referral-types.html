@@ -1,0 +1,31 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "management-information" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+  This week so far - Management information - Visiting Service Management System
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  {% include "v1/management-information/includes/week-so-far-summary.html" %}
+
+  <div class="nav-tabbed m-t-xl" id="tabs">
+    <ul>
+      <li><a href="week-so-far-index#tabs"><span>Team members</span></a></li>
+      <li class="current"><span>Referral types</span></li>
+      <li><a href="week-so-far-locations#tabs"><span>Locations</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>{# /nav-tabbed #}
+
+  {% include "v1/management-information/includes/table-referral-types.html" %}
+
+</main>
+
+{% endblock %}

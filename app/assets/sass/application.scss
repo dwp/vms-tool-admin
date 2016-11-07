@@ -1328,3 +1328,31 @@ ul.tabs li {
 //     }
 //   }
 // }
+
+
+
+// Fixed table headers
+
+// body { height: 1000px; }
+// #header-fixed { 
+//   position: fixed; 
+//   top: 0px; 
+//   display:none;
+//   background-color:white;
+// }
+
+.sortable th {
+}
+
+.fixedHeader-floating {
+  position: fixed;
+  background-color: $page-colour;
+
+} 
+
+.fixedHeader-floating th {
+  // background-color: red !important;
+  // position: fixed;
+  border-bottom: 2px solid $border-colour;
+}
+
