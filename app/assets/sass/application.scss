@@ -1246,13 +1246,17 @@ ul.tabs li {
   background-color: rgba(0,0,0,0.03);
 }
 
-.sortable th,
-.sortable td {
+.referral-types-table th,
+.referral-types-table td,
+.team-members-table th,
+.team-members-table td {
   text-align: right;
 }
 
-.sortable th:first-child,
-.sortable td:first-child {
+.referral-types-table th:first-child,
+.referral-types-table td:first-child,
+.team-members-table th:first-child,
+.team-members-table td:first-child {
   text-align: left;
 }
 
