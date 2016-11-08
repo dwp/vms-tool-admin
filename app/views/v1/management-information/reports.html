@@ -1,0 +1,151 @@
+{% from "../macros/version.html" import versionNumber %}
+{% set section = "management-information" %}
+{% set headerType = "search" %}
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+  Reports - Management information - Visiting Service Management System
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/nav.html" %}
+
+<main id="content" role="main">
+
+  <h1>Reports</h1>
+
+  <div class="nav-tabbed m-t-xl" id="tabs">
+    <ul>
+      <li class="current"><span>Last week</span></li>
+      <li><a href="week-so-far-referral-types#tabs"><span>Last fortnight</span></a></li>
+      <li><a href="week-so-far-referral-types#tabs"><span>Last month</span></a></li>
+      <li><a href="week-so-far-locations#tabs"><span>Custom date range</span></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>{# /nav-tabbed #}
+
+  <p class="m-b-xs"><label for="team">Visit reason</label></p>
+
+  <p>
+  <select id="team" data-placeholder="Choose a reason for this visit" class="chosen-select" tabindex="2">
+    <option value=""></option>
+    <option value="#">Leeds</option>
+    <option value="#">Sheffield</option>
+    <option value="#">Nottingham</option>
+    <option value="#">Bedford</option>
+    <option value="#">Wolverhampton</option>
+  </select>
+  </p>
+
+  <p class="m-b-xs"><label for="team">Team member</label></p>
+  <p>
+  <select id="team" data-placeholder="Choose a reason for this visit" class="chosen-select" tabindex="2">
+    <option value="#">Aaron Kirk</option>
+    <option value="#">Amy Shackelford</option>
+    <option value="#">Angelo Pullman</option>
+    <option value="#">Audra Earwood</option>
+    <option value="#">Dwain Pollan</option>
+    <option value="#">Geneva Nieto</option>
+    <option value="#">Haywood Rayl</option>
+    <option value="#">Heidi Garoutte</option>
+    <option value="#">Helene Everson</option>
+    <option value="#">Henry Whitely</option>
+    <option value="#">Holli Crooker</option>
+    <option value="#">Jazmin Maner</option>
+    <option value="#">Katheleen Baylis</option>
+    <option value="#">Kimbery Samson</option>
+    <option value="#">Laci Guerrero</option>
+    <option value="#">Magnolia Guo</option>
+    <option value="#">Noemi Brasher</option>
+    <option value="#">Reed Hamler</option>
+    <option value="#">Sherlene Holderman</option>
+    <option value="#">Velda Brunson</option>
+  </select>
+  </p>
+
+  <div class="grid-row">
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0">Received</h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>212</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Jobcentres:</dt>
+        <dd>5</dd>
+        <dt>Third-party referrals:</dt>
+        <dd>0</dd>
+        <dt>Other visiting teams:</dt>
+        <dd>8</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0">Bookings</h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>189</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Unsafe areas:</dt>
+        <dd>13</dd>
+        <dt>UCB:</dt>
+        <dd>12</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter">
+      <h3 class="heading-medium m-t-0 m-b-0">Visits</h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>165</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>With interpreter:</dt>
+        <dd>8</dd>
+        <dt>Interpreter still needed:</dt>
+        <dd>3</dd>
+        <dt>Unsafe areas:</dt>
+        <dd>13</dd>
+        <dt><abbr title="unacceptable customer behaviour">UCB</abbr>:</dt>
+        <dd>12</dd>
+      </dl>
+    </div>{# /column-one-quarter #}
+
+    <div class="column-one-quarter cleared-stats">
+      <h3 class="heading-medium m-t-0 m-b-0">Cleared referrals</h3>
+      <dl class="big-number">
+        <dt class="visually-hidden">Total:</dt>
+        <dd>19</dd>
+      </dl>
+      <dl class="stat-listing font-xsmall">
+        <dt>Cleared by phone:</dt>
+        <dd>5</dd>
+        <dt>Customer unavailable:</dt>
+        <dd>8</dd>
+        <dt>Marked as duplicate:</dt>
+        <dd>0</dd>
+        <dt>Rejected:</dt>
+        <dd>6</dd>
+      </dl>
+    </div>{# /cleared #}
+
+  </div>{# /grid-row #}
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+{% endblock %}
